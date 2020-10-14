@@ -1,731 +1,735 @@
 <div class="section">
     <div>
-    	<iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
+        <iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
         <div style="top: 70px;font-size: 75px;font-weight: bold;">
-        	What Happens Next?
-       	</div>
-		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
-			COVID-19 Futures, Explained With Playable Simulations
-		</div>
-		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
-			<b>
-				🕐 30 min play/read
-				&nbsp;&middot;&nbsp;
-			</b>
-			by
-			<a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
-			(epidemiologist)
-			&
-			<a href="https://ncase.me/">Nicky Case</a>
-			(art/code)
-		</div>
-	</div>
+            Co bude dál?
+        </div>
+        <div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
+            Různé scénáře COVID-19 pomocí hratelných simulací
+        </div>
+        <div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
+            <b>
+                🕐 30 min experimentování a čtení
+                &nbsp;&middot;&nbsp;
+            </b>
+            <a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
+            (epidemiolog)
+            a
+            <a href="https://ncase.me/">Nicky Case</a>
+            (grafika/kód)
+        </div>
+        <div style="font-weight: 100;top: 220px;left: 345px;font-size: 19px;line-height: 21px;">
+            Filip Hráček a Marie Volná (překlad)
+        </div>
+    </div>
 </div>
 
-"The only thing to fear is fear itself" was stupid advice.
+**Poznámka překladatele:** _Tento interaktivní článek je z května 2020 a často odkazuje na americké reálie, nicméně veškerý obsah i závěry jsou platné i pro Českou republiku dnes. Epidemie se chovají všude stejně. Matematika nezná hranice._ (Filip Hráček, říjen 2020)</p>
 
-Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
+<p>&nbsp;&middot;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&middot;&nbsp;</p>
 
-Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you are, too! That's why we've channelled our fear into making these **playable simulations**, so that *you* can channel your fear into understanding:
+"Bát se člověk má jen strachu samotného." To je pitomá rada.
 
-* **The Last Few Months** (epidemiology 101, SEIR model, R & R<sub>0</sub>)
-* **The Next Few Months** (lockdowns, contact tracing, masks)
-* **The Next Few Years** (loss of immunity? no vaccine?)
+Jasně, nehromaďte toaletní papír, ale pokud se zákonodárci bojí strachu samotného, budou nebezpečí podceňovat jen proto, aby se vyvarovalo vzniku "masové paniky". Strach samotný není problém, problém je jakým způsobem *směřujeme* náš strach. Strach nám dává energii čelit současným nebezpečím, ale také se připravit na ta budoucí. 
 
-This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
+Upřímně: my (Marcel, epidemiolog a Nicky, grafika/kód) jsme znepokojení. Vsadíme se, že Vy také! Proto jsme nasměřovali náš strach k vytvoření těchto **hratelných simulací**, ať také Vy můžete nasměrovat svůj strach směrem k porozumění:
 
-[^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
+* **Posledních pár měsíců** (základy epidemiologie, SEIR model, R & R<sub>0</sub>)
+* **Následujících pár měsíců** (lockdowny, trasování kontaktů, masky)
+* **Následujících pár let** (ztráta imunity? žádná vakcína?)
+
+Tento průvodce (publikovaný 1. května 2020. klikněte na tuto poznámku pod čarou!→[^timestamp]) Vám má dodat naději *a* strach. Aby bylo možné porazit COVID-19 **způsobem, který zároveň chrání naše psychické & finanční zdraví**, je zapotřebí optimismu pro vytvoření plánů a pesimismu pro vytvoření záložních plánů. Jak kdysi řekla Gladys Bronwyn Stern, *“Optimisté vynalezli letadlo, pesimisté padák.”*
+
+[^timestamp]: Tyto poznámky pod čarou budou obsahovat zdroje, odkazy nebo bonusové komentáře. Jako tento komentář!
     
-    **This guide was published on May 1st, 2020.** Many details will become outdated, but we're confident this guide will cover 95% of possible futures, and that Epidemiology 101 will remain forever useful.
+    **Tento průvodce byl publikován 1. května 2020** Mnoho obsažených informací se stane v budoucnosti zastaralými, věříme však, že tento průvodce pokryje 95 % možných budoucností a že Epidemiologie 101 zůstane navždy užitečná.
     
-    (Update May 15: Added citations for "1 in 20 of infected are hospitalized" and "0.5% of infected die")
+    (Aktualizováno 15. května: Přidány citace pro "1 z 20 of infikovaných osob jsou hospitalizovány" a "0.5 % infikovaných osob umírá")
 
-So, buckle in: we're about to experience some turbulence.
+Teď se raději připoutejte: čekají nás pořádné turbulence.
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Last Few Months</div>
+        <div>Posledních pár měsíců</div>
     </div>
 </div>
 
-Pilots use flight simulators to learn how not to crash planes.
+Piloti využívají leteckých simulátorů, aby se naučili vyvarovat letecké havárii.
 
-**Epidemiologists use epidemic simulators to learn how not to crash humanity.**
+**Epidemiologové využívají epidemiologických simulátorů, aby se naučili jak vyvarovat havárii lidstva.**
 
-So, let's make a very, *very* simple "epidemic flight simulator"! In this simulation, <icon i></icon> Infectious people can turn <icon s></icon> Susceptible people into more <icon i></icon> Infectious people:
+Vytvořmě tedy velmi, *velmi* jednoduchý "letecký simulátor epidemie"! V této simulaci mohou <icon i></icon> nakažliví jedinci přeměnit <icon s></icon> ohrožené jedince do více <icon i></icon> nakažlivých jedinců:
 
 ![](pics/spread.png)
 
-It's estimated that, *at the start* of a COVID-19 outbreak, the virus jumps from an <icon i></icon> to an <icon s></icon> every 4 days, *on average*.[^serial_interval] (remember, there's a lot of variation)
+Předpokládá se, že *na začátku* šíření onemocnění COVID-19 přeskočí virus z <icon i></icon> na <icon s></icon> každé 4 dny, *průměrně*.[^serial_interval] (pamatujte, že rozptyl je vysoký)
 
-[^serial_interval]: “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Disclaimer: Early release articles are not considered as final versions)
+[^serial_interval]: “Hlavní [sériový] interval byl 3.96 dní (95% CI 3.53–4.39 dní)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Disclaimer: Články s předčasným vydáním nejsou považovány za jejich finální verze)
 
-If we simulate "double every 4 days" *and nothing else*, on a population starting with just 0.001% <span class="nowrap"><icon i></icon>,</span> what happens? 
+Pokud budeme simulovat "dvojnásobek každé 4 dny" *a nic jiného* - na populaci začínající na hodnotě pouhých 0.001% <span class="nowrap"><icon i></icon>,</span> co se stane? 
 
-**Click "Start" to play the simulation! You can re-play it later with different settings:** (technical caveats: [^caveats])
+**Klikněte na "Start" pro odehrání simulace! Později si ji můžete zahrát znovu s jiným nastavením:** (technická poznámka: [^caveats])
 
-[^caveats]: **Remember: all these simulations are super simplified, for educational purposes.**
+[^caveats]: **Pamatujte: veškeré simulace jsou výrazně zjednodušeny pro účely vzdělávání.**
     
-    One simplification: When you tell this simulation "Infect 1 new person every X days", it's actually increasing # of infected by 1/X each day. Same for future settings in these simulations – "Recover every X days" is actually reducing # of infected by 1/X each day.
+    Jedno zjednodušení: Když této simulaci řeknete "Infikuj 1 novou osobu každých X dní", ve skutečnosti se zvyšuje # infikovaných na 1/X každý den. To samé platí pro budoucí nastavení této simulace – "Zotavení každých X dní" ve skutečnosti snižuje # infikovaných na 1/X každý den.
     
-    Those *aren't* exactly the same, but it's close enough, and for educational purposes it's less opaque than setting the transmission/recovery rates directly.
+    Tyto *nejsou* zcela totožné, ale je zde dostatečná podobnost a pro vzdělávací účely je toto nastavení méně matné, než nastavení hodnot pro přenos/zotavení přímo. 
 
 <div class="sim">
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
 
-This is the **exponential growth curve.** Starts small, then explodes. "Oh it's just a flu" to "Oh right, flus don't create *mass graves in rich cities*". 
+Toto je **křivka exponenciálního růstu.** Pomalý začátek a posléze exploze. Začínáme s "Ale vždyť je to jen chřipka." a končíme u "No jasně, chřikpy vlastně nevytváří *masové hroby v bohatých městech*". (autoři naráží na záběry [masových hrobů](https://www.politifact.com/factchecks/2020/apr/15/facebook-posts/fact-checking-posts-about-mass-graves-nyc/) blízko New Yorku z dubna — poznámka překladatele)
 
 ![](pics/exponential.png)
 
-But, this simulation is wrong. Exponential growth, thankfully, can't go on forever. One thing that stops a virus from spreading is if others *already* have the virus:
+Tato simulace je ale špatná. Exponenciální růst, naštěstí, nemůže pokračovat donekonečna. Jedním z aspektů, který zastavuje šíření viru, je situace, ve které jsou ostatní *již* virem nakažení:
 
 ![](pics/susceptibles.png)
 
-The more <span class="nowrap"><icon i></icon>s</span> there are, the faster <span class="nowrap"><icon s></icon>s</span> become <span class="nowrap"><icon i></icon>s,</span> **but the fewer <span class="nowrap"><icon s></icon>s</span> there are, the *slower* <span class="nowrap"><icon s></icon>s</span> become <span class="nowrap"><icon i></icon>s.</span>**
+Čím více je <span class="nowrap"><icon i></icon>s</span>, tím rychleji se <span class="nowrap"><icon s></icon>s</span> stávají <span class="nowrap"><icon i></icon>s,</span> **ale čím méně je <span class="nowrap"><icon s></icon>s</span>, tím *pomaleji* se <span class="nowrap"><icon s></icon>s</span> stávají <span class="nowrap"><icon i></icon>s.</span>**
 
-How's this change the growth of an epidemic? Let's find out:
+Jak to mění růst epidemie? Podívejme se na to:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
 
-This is the "S-shaped" **logistic growth curve.** Starts small, explodes, then slows down again.
+Toto je "S-tvar" **křivky logistického růstu.** Začíná pomalu, exploduje a poté se opět zpomalí.
 
-But, this simulation is *still* wrong. We're missing the fact that <icon i></icon> Infectious people eventually stop being infectious, either by 1) recovering, 2) "recovering" with lung damage, or 3) dying.
+I přesto je tato simulace *stále* nesprávná. Chybí nám jeden faktor. A to, že <icon i></icon> nakažliví lidé dřív nebo později přestávají být nakažlivými, ať již kvůli 1) uzdravení, 2) "zotavování" s poškozením plic nebo 3) úmrtí.
 
-For simplicity's sake, let's pretend that all <icon i></icon> Infectious people become <icon r></icon> Recovered. (Just remember that in reality, some are dead.) <span class="nowrap"><icon r></icon>s</span> can't be infected again, and let's pretend – *for now!* – that they stay immune for life.
+Pro zjednodušení budeme předstírat, že všichni <icon i></icon> nakažliví jedinci se změní v <icon r></icon> uzdravené. (Mějte na paměti, že v realitě někteří umírají.) <span class="nowrap"><icon r></icon></span> nemohou být znovu infikováni a předstírejme – *prozatím!*, že jsou do konce života imunní.
 
-With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on average*.[^infectiousness] That means some folks will recover before 10 days, some after. **Here's what that looks like, with a simulation *starting* with 100% <span class="nowrap"><icon i></icon>:</span>**
+*Průměrná* doba, kdy jste s onemocněním COVID-19 <icon i></icon> nakažliví, je 10 dní.[^infectiousness] To znamená, že někteří lidé se vyléčí za méně než 10 dní, někteří později. **Takto to vypadá, když simulaci *začneme* se 100 % <span class="nowrap"><icon i></icon>:</span>**
 
-[^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
+[^infectiousness]: “Medián přenosného období \[...\] byl 9.5 dní.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Ano, víme, že "medián" není to samé jako "průměr". Ale pro vzdělávací potřeby je to dostatečně blízko.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
 </div>
 
-This is the opposite of exponential growth, the **exponential decay curve.**
+Toto je opak exponenciálního růstu, tzv. **křivka exponenciálního poklesu.**
 
-Now, what happens if you simulate S-shaped logistic growth *with* recovery?
+Co se stane, pokud budeme simulovat S-tvar logistického růstu *se* zotavením?
 
 ![](pics/graphs_q.png)
 
-Let's find out.
+Podívejme se na to!
 
-<b style='color:#ff4040'>Red curve</b> is *current* cases <span class="nowrap"><icon i></icon>,</span>    
-<b style='color:#999999'>Gray curve</b> is *total* cases (current + recovered <span class="nowrap"><icon r></icon>),</span>
-starts at just 0.001% <span class="nowrap"><icon i></icon>:</span>
+<b style='color:#ff4040'>Červená křivka</b> jsou *současné* případy <span class="nowrap"><icon i></icon>,</span>    
+<b style='color:#999999'>Šedá křivka</b> jsou *celkové* případy (současné + zotavené <span class="nowrap"><icon r></icon>),</span>
+a začíná na pouhých 0.001 % <span class="nowrap"><icon i></icon>:</span>
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 
-And *that's* where that famous curve comes from! It's not a bell curve, it's not even a "log-normal" curve. It has no name. But you've seen it a zillion times, and beseeched to flatten.
+A *odtud* pochází ona slavná křivka! Nejedná se o Gaussovu křivku, není do dokonce ani "logaritmicko-normální" křivka. Nemá žádné pojmenování. I přesto se objevuje nespočetkrát a všichni doufají v její zploštění. 
 
-This is the **SIR Model**,[^sir]    
-(<icon s></icon>**S**usceptible <icon i></icon>**I**nfectious <icon r></icon>**R**ecovered)      
-the *second*-most important idea in Epidemiology 101:
+Toto je **SIR Model**,[^sir]    
+(<icon s></icon>**S**usceptible (ohrožení) <icon i></icon>**I**nfectious (nakažliví) <icon r></icon>**R**ecovered (uzdravení))      
+*druhý*-nejdůležitější pojem v základech epidemiologie:
 
-[^sir]: For more technical explanations of the SIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
+[^sir]: Pro více technické vysvětlení SIR Modelu se podívejte na [The Institute for Disease Modeling ](https://www.idmod.org/docs/hiv/model-sir.html#) a [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
 
 ![](pics/sir.png)
 
-**NOTE: The simulations that inform policy are way, *way* more sophisticated than this!** But the SIR Model can still explain the same general findings, even if missing the nuances.
+**POZNÁMKA: Simulace, které slouží jako podklady pro politiky jsou výrazně, *výrazně* sofistikovanější než tyto!** Nicméně SIR Model může i přesto vysvětlit některé všeobecné poznatky, i na úkor chybějících nuancí.
 
-Actually, let's add one more nuance: before an <icon s></icon> becomes an <span class="nowrap"><icon i></icon>,</span> they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.
+Vlastně, přidejme ještě jednu nuanci: předtím, než se <icon s></icon> stane <span class="nowrap"><icon i></icon>,</span> stávají se nejdříve <icon e></icon> nakaženými. Toto je období během kterého jedinec má virus, ale nemůže jej ještě přenášet na ostatní – je inf*ikovaný*, ale ne inf*ekční*.
 
 ![](pics/seir.png)
 
-(This variant is called the **SEIR Model**[^seir], where the "E" stands for <icon e></icon> "Exposed". Note this *isn't* the everyday meaning of "exposed", when you may or may not have the virus. In this technical definition, "Exposed" means you definitely have it. Science terminology is bad.)
+(Tato varianta se nazývá **SEIR Model**[^seir], ve kterém (z angl.) "E" představuje <icon e></icon> "Exposed" ("Nakažení"). Upozorňujeme, že toto *neznamená* běžný význam anglického slova "exposed", kdy možná máte a možná nemáte virus. V této speciální definici, "exposed" znamená, že jej skutečně máte. Vědecká terminologie je oříšek.)
 
-[^seir]: For more technical explanations of the SEIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
+[^seir]: Pro více technické vysvětlení SIR Modelu se podívejte na [The Institute for Disease Modeling ](https://www.idmod.org/docs/hiv/model-seir.html) a [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
-For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-infectious for 3 days, *on average*.[^latent] What happens if we add that to the simulation?
+U onemocnění COVID-19 se předpokládá, že *v průměru* jste <icon e></icon> nakažení-ale-ještě-ne-nakažliví po období 3 dnů.[^latent] Co se stane, pokud to přidáme do simulace?
 
-[^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
+[^latent]: “Pokud předpokládáme, že inkubační období hlavní distribuce je 5.2 dní, na základě prvnotních studií případů onemocnění COVID-19, můžeme usoudit, že infekční období začíná od 2.3 dní (95 % CI, 0.8–3.0 dní) před nástupem symptomů” (překlad: Pokud předpokládáme počátek symptomů kolem 5. dne, infekčnost začíná o 2 dny dříve = Infekčnost začíná během 3 dnů) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-<b style='color:#ff4040'>Red <b style='color:#FF9393'>+ Pink</b> curve</b> is *current* cases (infectious <icon i></icon> + exposed <span class="nowrap"><icon e></icon>),</span>    
-<b style='color:#888'>Gray curve</b> is *total* cases (current + recovered <span class="nowrap"><icon r></icon>):</span>
+<b style='color:#ff4040'>Červená <b style='color:#FF9393'>+ Růžová</b> křivka</b> představuje *současné* případy (nakažlivé <icon i></icon> a nakažené <span class="nowrap"><icon e></icon>),</span>    
+<b style='color:#888'>Šedá křivka</b> představuje *celkové* případy (současné + uzdravené <span class="nowrap"><icon r></icon>):</span>
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
 
-Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <span class="nowrap"><icon e></icon>-to-<icon i></icon>,</span> and *when* current cases peak... but the *height* of that peak, and total cases in the end, stays the same.
+Moc se nezmění! Délka období mezi <icon e></icon> nakažením a <icon i></icon> nakažlivostí mění poměr <span class="nowrap"><icon e></icon>/<icon i></icon>,</span> a taky to, *kdy* vrcholí současné případy... nicméně *výška* tohoto vrcholu, a kompletního součtu případů na konci, zůstává stejná.
 
-Why's that? Because of the *first*-most important idea in Epidemiology 101:
+Proč tomu tak je? Důvodem je onen *první*-nejdůležitější pojem v základech epidemiologie:
 
 ![](pics/r.png)
 
-Short for "Reproduction number". It's the *average* number of people an <icon i></icon> infects *before* they recover (or die).
+Zkratka pro "Reprodukční číslo". Jedná se o *průměrné* číslo lidí, které <icon i></icon> nakazí *předtím* než se zotaví (nebo umře).
 
 ![](pics/r2.png)
 
-**R** changes over the course of an outbreak, as we get more immunity & interventions.
+**R** se během epidemie mění, tak jak lidé získávají imunitu a jak se zavádějí různá opatření.
 
-**R<sub>0</sub>** (pronounced R-nought) is what R is *at the start of an outbreak, before immunity or interventions*. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas.
+**R<sub>0</sub>** (čte se R-nula) je hodnota R *na počátku šíření, před získáním imunity, a před jakýmikoliv opatřeními*. R<sub>0</sub> se více zaměřuje na sílu viru jako takového, ale stále se může čas od času měnit. Například, R<sub>0</sub> je vyšší ve městech s vyšší hustotou obydlení než v méně obydlených oblastech.
 
-(Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad)
+(Většina zpravodajských článků – a dokonce i některé vědecké práce! – zaměňují R a R<sub>0</sub>. Ještě jednou, vědecká terminologie je oříšek.)
 
-The R<sub>0</sub> for "the" seasonal flu is around 1.28[^r0_flu]. This means, at the *start* of a flu outbreak, each <icon i></icon> infects 1.28 others *on average.* (If it sounds weird that this isn't a whole number, remember that the "average" mom has 2.4 children. This doesn't mean there's half-children running about.)
+R<sub>0</sub> pro sezónní chřipku má hodnotu 1.28[^r0_flu]. To znamená, za na *začátku* šíření chřipky, každý <icon i></icon> infikuje *průměrně* 1.28 ostatních . (Pokud vám zní zvláštně, že se nejedná o celé číslo, pamatujte si, že "průměrná" máma má 2.4 dětí. Neznamená to, že někde probíhají poloviční děti.)
 
-[^r0_flu]: “The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
+[^r0_flu]: “Medián R hodnoty pro sezónní chřipku byl 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
 
-The R<sub>0</sub> for COVID-19 is estimated to be around 2.2,[^r0_covid] though one *not-yet-finalized* study estimates it was 5.7(!) in Wuhan.[^r0_wuhan]
+R<sub>0</sub> pro COVID-19 je předpokládán na hodnotě kolem 2.2,[^r0_covid], ačkoliv jedna *ještě nedokončená* studie předpokládá, že se ve Wuhanu jednalo o hodnotu 5.7(!).[^r0_wuhan]
 
-[^r0_covid]: “We estimated the basic reproduction number R0 of 2019-nCoV to be around 2.2 (90% high density interval: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
+[^r0_covid]: “Odhadujeme základní reprodukční číslo R0 pro 2019-nCoV na hodnotu kolem 2.2 (90 % vysoký interval hustoty: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
 
-[^r0_wuhan]: “we calculated a median R0 value of 5.7 (95% CI 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
+[^r0_wuhan]: “vypočítali jsme medián R0 hodnoty 5.7 (95% CI 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
 
-In our simulations – *at the start & on average* – an <icon i></icon> infects someone every 4 days, over 10 days. "4 days" goes into "10 days" two-and-a-half times. This means – *at the start & on average* – each <icon i></icon> infects 2.5 others. Therefore, R<sub>0</sub> = 2.5. (caveats:[^r0_caveats_sim])
+V našich simulacích – *na začátku a průměrně* – jeden <icon i></icon> infikuje člověka každé 4 dny, po období 10 dní. "4 dny" spadají do "10 dnů" dva a půlkrát. To znamená, že – *na začátku a průměrně* – každý <icon i></icon> infikuje 2.5 ostatních. Tedy R<sub>0</sub> = 2.5. (technická:[^r0_caveats_sim])
 
-[^r0_caveats_sim]: This is pretending that you're equally infectious all throughout your "infectious period". Again, simplifications for educational purposes.
+[^r0_caveats_sim]: To je za předpokladu, že člověk je stejně infekční během celého "infekčního období". Opět, zjednodušení pro vzdělávací účely.
 
-**Play with this R<sub>0</sub> calculator, to see how R<sub>0</sub> depends on recovery time & new-infection time:**
+**Pohrajte si s touto R<sub>0</sub> kalkulačkou a podívejte se, jakým způsobem je R<sub>0</sub> závislé na době zotavení a periodě nové infekce:**
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 </div>
 
-But remember, the fewer <span class="nowrap"><icon s></icon>s</span> there are, the *slower* <span class="nowrap"><icon s></icon>s</span> become <span class="nowrap"><icon i></icon>s.</span> The *current* reproduction number (R) depends not just on the *basic* reproduction number (R<sub>0</sub>), but *also* on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering & getting natural immunity.)
+Ale pomněte: čím méně je <span class="nowrap"><icon s></icon></span>, tím *pomaleji* se <span class="nowrap"><icon s></icon></span> stávají <span class="nowrap"><icon i></icon>.</span> *Současné* reprodukční číslo (R) nezávisí pouze na *základním* reprodukčním čísle (R<sub>0</sub>), ale *také* na tom, jaký počet lidí již nepatří mezi <icon s></icon> ohrožené. (Například jejich zotavením a získáním přirozené imunity.)
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
 
-When enough people have immunity, R < 1, and the virus is contained! This is called **herd immunity**. For flus, herd immunity is achieved *with a vaccine*. Trying to achieve "natural herd immunity" by letting folks get infected is a *terrible* idea. (But not for the reason you may think! We'll explain later.)
+Když má dostatek lidí imunitu, R < 1, a virus je potlačen! Tomu se říká **stádní imunita**. U chřipky je stádní imunity dosaženo *očkováním*. Pokoušet se o dosažení "přirozené stádní imunity" vystavením lidí infekci je *příšerný* nápad. (Avšak ne z důvodů, které si nejspíš myslíte! K tomu se dostaneme později.)
 
-Now, let's play the SEIR Model again, but showing R<sub>0</sub>, R over time, and the herd immunity threshold:
+Zkusme si nyní opět přehrát SEIR Model, nyní zobrazující R<sub>0</sub>, R napříč časem, a hranici stádní imunity:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 </div>
 
-**NOTE: Total cases *does not stop* at herd immunity, but overshoots it!** And it crosses the threshold *exactly* when current cases peak. (This happens no matter how you change the settings – try it for yourself!)
+**VŠIMNĚTE SI: Celkové případy *se nezastaví* na hranici stádní imunity, ale přestřelí ji!** A překračují tu hranici *přesně* v momentu nejvyššího počtu případů. (To nastává bez ohledu na změnu nastavení – vyzkoušejte si to sami!)
 
-This is because when there are more <span class="nowrap">non-<icon s></icon>s</span> than the herd immunity threshold, you get R < 1. And when R < 1, new cases stop growing: a peak.
+Pokud existuje více <span class="nowrap">ne-<icon s></icon></span> než je hranice stádní imunity, vytváří se R < 1. A když je R < 1, růst nových případů se zastavuje: vrchol.
 
-**If there's only one lesson you take away from this guide, here it is** – it's an extremely complex diagram so please take time to fully absorb it:
+**Pokud si máte odnést pouze jedno ponaučení z tohoto průvodce, je to toto** – jedná se o extrémně komplexní diagram, a tak si na jeho prostudování a vstřebání dejte čas:
 
 ![](pics/r3.png)
 
-**This means: we do NOT need to catch all transmissions, or even nearly all transmissions, to stop COVID-19!**
+**Toto znamená: NEPOTŘEBUJEME zachytit všechny přenosy, nebo téměř všechny, k tomu, abychom zastavili COVID-19!**
 
-It's a paradox. COVID-19 is extremely contagious, yet to contain it, we "only" need to stop more than 60% of infections. 60%?! If that was a school grade, that's a D-. But if R<sub>0</sub> = 2.5, cutting that by 61% gives us R = 0.975, which is R < 1, virus is contained! (exact formula:[^exact_formula])
+Je to paradox. COVID-19 je extrémně nakažlivý, i přesto k jeho zastavení potřebujeme zastavit "pouze" více než 60% infekcí. 60%?! Pokud by to byla školní známka, bylo by to 4-. Ale pokud máme R<sub>0</sub> = 2.5, a snížíme jej o 61 %, dává nám to hodnotu R = 0.975, což splňuje R < 1. Virus je pod kontrolou! (přesný vzorec:[^exact_formula])
 
-[^exact_formula]: Remember R = R<sub>0</sub> * the ratio of transmissions still allowed. Remember also that ratio of transmissions allowed = 1 - ratio of transmissions *stopped*.
+[^exact_formula]: Mějte na paměti R = R<sub>0</sub> * poměr stále povolených přenosů. Pamatujte také na to, že poměr přenosů povoluje = 1 - poměr přenosů *zastavených*.
     
-    Therefore, to get R < 1, you need to get R<sub>0</sub> * TransmissionsAllowed < 1. 
+    Tedy, pro dosažení hodnoty R < 1, je nutné získat R<sub>0</sub> * TransmissionsAllowed < 1. 
     
-    Therefore, TransmissionsAllowed < 1/R<sub>0</sub>
+    Tedy, TransmissionsAllowed < 1/R<sub>0</sub>
     
-    Therefore, 1 - TransmissionsStopped < 1/R<sub>0</sub>
+    Tedy, 1 - TransmissionsStopped < 1/R<sub>0</sub>
     
-    Therefore, TransmissionsStopped > 1 - 1/R<sub>0</sub>
+    Tedy, TransmissionsStopped > 1 - 1/R<sub>0</sub>
     
-    Therefore, you need to stop more than **1 - 1/R<sub>0</sub>** of transmissions to get R < 1 and contain the virus!
+    Tedy, potřebujete zasravit více než **1 - 1/R<sub>0</sub>** přenosů pro získání R < 1 a zastavení viru!
 
 ![](pics/r4.png)
 
-(If you think R<sub>0</sub> or the other numbers in our simulations are too low/high, that's good you're challenging our assumptions! There'll be a "Sandbox Mode" at the end of this guide, where you can plug in your *own* numbers, and simulate what happens.)
+(Pokud si myslíte, že R<sub>0</sub> nebo další čísla v naší simulaci jsou příliš nízká/vysoká, to je dobře. Znamená to, že zpochybňujete naše předpoklady! Na konci tohoto průvodce najdete "Sandbox Mode", kam můžete zadat svá *vlastní* čísla a simulovat postup.)
 
-*Every* COVID-19 intervention you've heard of – handwashing, social/physical distancing, lockdowns, self-isolation, contact tracing & quarantining, face masks, even "herd immunity" – they're *all* doing the same thing:
+*Každé* COVID-19 opatření, které znáte – mytí rukou, rozestupy, lockdowny, vlastní izolace, trasování kontaktů & karanténa, masky na obličej, dokonce i "stádní imunita" – *všechna* dělají jedno:
 
-Getting R < 1.
+Dostávají R pod 1.
 
-So now, let's use our "epidemic flight simulator" to figure this out: How can we get R < 1 in a way **that also protects our mental health *and* financial health?**
+Takže nyní je na čase použít náš "letecký simulátor epidemie" a přijít tomu na kloub: Jak můžeme získat R < 1 způsobem, **který chrání naše tělesné *a* finanční zdraví?**
 
-Brace yourselves for an emergency landing...
+Připravte se na nouzové přistání...
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Months</div>
+        <div>Několik následujících měsíců</div>
     </div>
 </div>
 
-...could have been worse. Here's a parallel universe we avoided:
+...mohlo to být horší. Zde je paralelní realita, která se nestala skutečností:
 
-###Scenario 0: Do Absolutely Nothing
+### Scénář 0: Nicnedělání
 
-*Roughly* 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).[^icu_covid] In a rich country like the USA, there's 1 ICU bed per 3400 people.[^icu_us] Therefore, the USA can handle 20 out of 3400 people being *simultaneously* infected – or, 0.6% of the population.
+*Zhruba* 1 z 20 lidí infikovaných onemocněním COVID-19 vyžaduje JIP (Jednotka intenzivní péče).[^icu_covid] V bohatých zemích, jako je USA, je k dispozici jedno JIP lůžko na 3400 lidí.[^icu_us] To znamená, že USA dokáží zvládnout 20 z 3400 lidí nakažených *zároveň* – nebo, 0.6 % populace.
 
-[^icu_covid]: **[UPDATED MAY 15]** Many of you rightly pointed out that our previous citation for "**1 in 20** need hospitalization" was based off old USA data on *confirmed* cases – which was way lower than the *real* number of cases, due to lack of tests.
+[^icu_covid]: **[AKTUALIZOVÁNO 15. KVĚTNA]** Mnoho z Vás právem poukázalo na naši předešlou citaci "**1 z 20** vyžaduje hospitalizaci", ta byla založena na starých datech USA zabývajících se *potvrzenými* případy – což bylo výrazně nižší oproti *skutečným* počtům případů z důvodu nedostatku testování.
     
-    So, let's look at the country with the *most* tests per capita: Iceland. [On May 15th, 2020](https://web.archive.org/web/20200516012656/https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Iceland), they had 115 hospitalized among 1802 confirmed cases ≈ 6.4% hospitalization rate, or **1 in 16**.
+    Podívejme se tedy na zemi s *nejvyšším* počtem testů na počet obyvatel: Island. [15. května 2020](https://web.archive.org/web/20200516012656/https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Iceland), měl Island 118 hospitalizovaných na 1802 potvrzených případů ≈ 6.4 % hospitalizační hodnota nebo **1 z 16**.
     
-    [A more recent study of COVID-19 in France](https://science.sciencemag.org/content/early/2020/05/12/science.abc3517) – using not just official confirmed cases but also antibody test data – found that “3.6% of infected individuals are hospitalized”. Or, **1 in 28.**
+    [Více současná studie COVID-19 ve Francii](https://science.sciencemag.org/content/early/2020/05/12/science.abc3517) – využívající nejen oficiální potvrzené případy, ale také data testů protilátek, zjistila, že “3.6 % infikovaných jedinců vyžaduje hospitalizaci”. Nebo, **1 z 28.**
     
-    Overall, there's a lot of uncertainty, but "1 in 20" is roughly close. Besides, for the rest of these simulations, we *triple* hospital capacity – so, even if "1 in 20" is three times too high, the point still stands.
+    Celkově je zde spousta nejistot, ale "1 z 20" je poměrně blízká hodnota. Mimoto, pro zbytek těchto simulací byla kapacita nemocnic *ztrojnásobena* – takže, i když je "1 z 20" třikrát vyšší, pointa zůstává stejná.
     
-    Old citation: ~~["Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations.~~
+    Stará citace: ~~["Procento případů onemocnění COVID-19 ve Spojených státech amerických od 12. února do 16. března 2020, které vyžadovaly přijetí na jednotku intenzivní péče (JIP) dle věkové skupiny"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Mezi 4.9 % a 11.5 % pro *všechny* COVID-19 případy vyžadující ICU. Nižší hranice je vybírána štědře, jedná se o 5 % nebo 1 z 20. Všimněte si, že se jedná o celek specifický pro věkovou strukturu USA a bude vyšší v zemích se starší populací a nižší v zemích s mladší populací.~~
 
-[^icu_us]: “Number of ICU beds = 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400. 
+[^icu_us]: “Počet JIP lůžek = 96,596”. Od [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Populace byla 328,200,000 v roce 2019. 96,596 z 328,200,000 = přibližně 1 z 3400. 
 
-Even if we *more than tripled* that capacity to 2%, here's what would've happened *if we did absolutely nothing:*
+I v případě, že kapacitu zvýšíme *více jak třikrát* na 2 %, stane se následující *pokud bychom absolutně nic neučinili:*
 
 <div class="sim">
 		<iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
 </div>
 
-Not good.
+To není dobré.
 
-That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected. 
-(remember: total cases *overshoots* herd immunity)
+Z tohoto důvodu se ve [zprávě Imperial College z 16. března](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) psalo, že pokud nic neuděláme, dojdou nám JIP lůžka s více jak 80 % populace vystavenými infekci.
+(pamatujte: celkové případy *přestřelují* stádní imunitu)
 
-Even if only 0.5% of infected die[^ifr] – a generous assumption when there's no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... *IF we did nothing.*
+I když pouhých 0.5 % infikovaných umírá[^ifr] – a to je štědré číslo, pokud zohledníme, že nejsou JIP lůžka – v zemi tak velké, jako je USA, s 300 miliony obyvatel, 0.5 % z 80 % pro 300 milionů = to je stále 1.2 milionů mrtvých... *POKUD by nebyly podniknuty žádné kroky.*
 
-[^ifr]: **[UPDATED MAY 15]** [Researchers in Indiana, USA](https://news.iu.edu/stories/2020/05/iupui/releases/13-preliminary-findings-impact-covid-19-indiana-coronavirus.html) did a random-sample test of the population, and found an infection-fatality rate (IFR) of 0.58%.
+[^ifr]: **[AKTUALIZOVÁNO 15. KVĚTNA]** [Výzkumníci v Indianě, USA](https://news.iu.edu/stories/2020/05/iupui/releases/13-preliminary-findings-impact-covid-19-indiana-coronavirus.html) provedli náhodný test populace a zjistili poměr infekce-úmrtí (IFR) v hodnotě 0.58 %.
 
-(Lots of news & social media reported "80% will be infected" *without* "IF WE DO NOTHING". Fear was channelled into clicks, not understanding. *Sigh.*)
+(Ve spoustě médií a na sociálních sítích se psalo "80% se nakazí", ale už ne o tom "NICNEDĚLÁNÍ". Do titulků byl zaveden strach bez porozumění. *Ach jo.*)
 
-###Scenario 1: Flatten The Curve / Herd Immunity
+###Scénář 1: Zploštění křivky / Stádní imunita
 
-The "Flatten The Curve" plan was touted by every public health organization, while the United Kingdom's original "herd immunity" plan was universally booed. They were *the same plan.* The UK just communicated theirs poorly.[^yong]
+Plán na "Zploštění křivky" byl vychvalován každou veřejnou zdravotnickou organizací, zatímco ve Velké Británii byl uninverzálním plánem původní záměr "stádní imunity" vypískán. Jedná se o *ty samé plány.* VB zkrátka ten svůj nedokázala dobře sdělit.[^yong]
 
-[^yong]: “He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”
+[^yong]: “Říká, že cíl je stejný jako v ostatních zemích: zploštění křivky ohromným nárůstem infekcí. Následkem může být zajištění národní stádní imunity; jedná se o vedlejší účinek, nikoliv záměr. [...] Skutečný vládní plán proti koronaviru, dostupný online, vůbec stádní imunitu nezmiňuje.”
     
-    From a [The Atlantic article by Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
+    Z [The Atlantic článku od Ed Yonga](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
 
-Both plans, though, had a literally fatal flaw.
+Nicméně, oba plány obsahují doslova fatální chybu.
 
-First, let's look at the two main ways to "flatten the curve": handwashing & physical distancing.
+Za prvé, podívejme se na dva hlavní způsoby, jak "zploštit křivku": mytí rukou & rozestupy.
 
-Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwashing], while the city-wide lockdown in London cut close contacts by ~70%[^london]. So, let's assume handwashing can reduce R by *up to* 25%, and distancing can reduce R by *up to* 70%:
+Zvýšené mytí rukou snižuje chřipku & nachlazení v zemích s vysokými příjmy o ~25 %[^handwashing], zatímco lockdown celého města v Londýně omezil kontakty o ~70 %[^london]. Řekněme, že mytí rukou dokáže snížit R *až na* 25 % a rozestupy dokáží snížit R *až na* 70 %:
 
-[^handwashing]: “All eight eligible studies reported that handwashing lowered risks of respiratory infection, with risk reductions ranging from 6% to 44% [pooled value 24% (95% CI 6–40%)].” We rounded up the pooled value to 25% in these simulations for simplicity. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Note: as this meta-analysis points out, the quality of studies for handwashing (at least in high-income countries) are awful.
+[^handwashing]: “Všech osm významných studií sděluje, že mytí rukou snižuje riziko respirační infekce, snížení rizika se pohybuje mezi 6 % až 44 % [pooled value 24% (95% CI 6–40%)].” Souhrnná hodnota byla zaokrouhlena na 25 %, pro potřeby zjednodušení této simulace. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Poznámka: jak poukazuje tato meta-analýza, kvality studií mytí rukou (zejména v zemích s vysokými příjmy) jsou hrozné.
 
-[^london]: “We found a 73% reduction in the average daily number of contacts observed per participant. This would be sufficient to reduce R0 from a value from 2.6 before the lockdown to 0.62 (0.37 - 0.89) during the lockdown”. We rounded it down to 70% in these simulations for simplicity. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
+[^london]: “Bylo zjištěno 75 % snížení denních kontaktů u pozorovaných subjektů. To by bylo dostačující pro snížení R0 z hodnoty 2.6 před lockdownem na 0.62 (0.37 - 0.89) během lockdownu”. To bylo zaokrouhleno na 70 % v těchto simulacích pro jejich zjednodušení. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
 
-**Play with this calculator to see how % of <span class="nowrap">non-<icon s></icon>,</span> handwashing, and distancing reduce R:** (this calculator visualizes their *relative* effects, which is why increasing one *looks* like it decreases the effect of the others.[^log_caveat])
+**Pohrejte si s tímto kalkulátorem a zjistěte jak poměr <span class="nowrap">ne-<icon s></icon>,</span> mytí rukou a rozestupy snižují R:** (tento kalkulátor vizualizuje jejich *relativní* účinky, z tohoto důvodu zvýšení jednoho *vypadá* jako že snižuje efekt druhého.[^log_caveat])
 
-[^log_caveat]: This distortion would go away if we plotted R on a logarithmic scale... but then we'd have to explain *logarithmic scales.*
+[^log_caveat]: Toto zkreslení zmizí v případě plánování R na logaritmické škále... ale to by bylo nutné vysvětlit *logaritmickou škálu.*
 
 <div class="sim">
 		<iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
 </div>
 
-Now, let's simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only *mild* physical distancing – so that R is lower, but still above 1:
+Zkusme nyní simulovat, jak by se vyvíjela epidemie COVID-19 pokud, počínaje březnem 2020, by bylo zvýšeno mytí rukou, avšak pouze *lehké* rozestupy – tak, že R je nižší, ale stále nad číslem 1:
 
 <div class="sim">
 		<iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
 </div>
 
-Three notes:
+Tři poznámky:
 
-1. This *reduces* total cases! **Even if you don't get R < 1, reducing R still saves lives, by reducing the 'overshoot' above herd immunity.** Lots of folks think "Flatten The Curve" spreads out cases without reducing the total. This is impossible in *any* Epidemiology 101 model. But because the news reported "80%+ will be infected" as inevitable, folks thought total cases will be the same no matter what. *Sigh.*
+1. Toto *snižuje* celkové případy! **I když se nedostanete na R < 1, snížení R stále zachraňuje životy, snížením 'přestřelení' nad stádní imunitu.** Celá řada lidí si myslí, že "Zploštění křivky" rozšiřuje případy bez snížení celku. Toto je nemožné v *jakémkoliv* modelu základní epidemiologie. Protože však zprávy podávají informace o tom, že "80% se nakazí" jako jasnou věc, lidé docházejí k závěru, že tento celkový počet případů se nemůže změnit. *Ach jo.*
 
-2. Due to the extra interventions, current cases peak *before* herd immunity is reached. In fact, in this simulation, total cases only overshoots *a tiny bit* above herd immunity – the UK's plan! At that point, R < 1, you can let go of all other interventions, and COVID-19 stays contained! Well, except for one problem...
+2. Z důvodů extra opatření dosahují současné případy vrcholu *před* dosažením kolektivní imunity. Ve skutečnosti v této simulaci celkový počet případů přestřelí *pouze zlehka* nad kolektivní imunitu – plán Velké Británie! V tomto případě, R < 1, je možné vypustit ostatní opatření a COVID-19 může být pod kontrolou! No, až na jeden problém...
 
-3. You still run out of ICUs. For several months. (and remember, we *already* tripled ICUs for these simulations)
+3. Stále je nedostatek JIP lůžek. A to na několik měsíců. (nezapomenínejte na to, že hodnota pro JIP *již* byla ztrojnásobena pro potřeby této simulace)
 
-That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at **mitigation** (reduce R, but R > 1) will fail. The only way out is **suppression** (reduce R so that R < 1).
+To patří k dalším zjištěním ze zprávy Imperial College z 16. března, která přesvědčila VB opustit svůj původní plán. Jakýkoliv pokus o **zmírnění** (snížení R, ale R > 1) selže. Jedinou cestou ven je **potlačení** (snížit R tak, aby nastalo R < 1).
 
 ![](pics/mitigation_vs_suppression.png)
 
-That is, don't merely "flatten" the curve, *crush* the curve. For example, with a...
+Toto není pouhé zploštění křivky, toto je její *rozbití*. Například využitím...
 
-###Scenario 2: Months-Long Lockdown
+###Scénář 2: Několikaměsíční lockdown
 
-Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – *finally* – return to normal life:
+Podívejme se co se stane, pokud *rozbijeme* křivku pětiměsíčním lockdownem, snížením <icon i></icon> na téměř nulovou hodnotu a poté konečně – *konečně* – návratem do normálního života:
 
 <div class="sim">
 		<iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
 </div>
 
-Oh.
+Aha.
 
-This is the "second wave" everyone's talking about. As soon as we remove the lockdown, we get R > 1 again. So, a single leftover <icon i></icon> (or imported <span class="nowrap"><icon i></icon>)</span> can cause a spike in cases that's almost as bad as if we'd done Scenario 0: Absolutely Nothing.
+Toto je ona "druhá vlna", o které všichni mluví. Jakmile stáhneme lockdown, opět se dostaneme na R > 1. Jeden jediný zbývající <icon i></icon> (nebo importovaný <span class="nowrap"><icon i></icon>)</span> může vyvolat skok případů, které jsou téměř tak hrozné, jako Scénář 0: Nicnedělání.
 
-**A lockdown isn't a cure, it's just a restart.**
+**Lockdown není lék, jedná se pouze o restart.**
 
-So, what, do we just lockdown again & again?
+Takže co, uděláme lockdown znovu & znovu?
 
-###Scenario 3: Intermittent Lockdown
+###Scénář 3: Přerušovaný lockdown
 
-This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.[^lockdown_harvard]
+Toto řešení jako první navrhla zpráva Imperial College z 16. března, a později také zpráva z Harvardu.[^lockdown_harvard]
 
-[^lockdown_harvard]: “Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
+[^lockdown_harvard]: “S absencí jiných intervencí bude klíčovým měřítkem pro úspěch rozestupů fakt, zda budou kapacity kritické péče překonány. Aby bylo možné se tomu vyvarovat je nutné aplikovat prodloužený nebo částečný lockdown až do roku 2022.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
-**Here's a simulation:** (After playing the "recorded scenario", you can try simulating your *own* lockdown schedule, by changing the sliders *while* the simulation is running! Remember you can pause & continue the sim, and change the simulation speed)
+**Zde je simulace:** (Po odehrání "nahraného scénáře", můžete vyzkoušet simulaci svého *vlastního* lockdown plánu změnou posuvníků *během* simulace! Simulaci můžete pozastavit & pokračovat nebo změnit její rychlost.)
 
 <div class="sim">
 		<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-This *would* keep cases below ICU capacity! And it's *much* better than an 18-month lockdown until a vaccine is available. We just need to... shut down for a few months, open up for a few months, and repeat until a vaccine is available. (And if there's no vaccine, repeat until herd immunity is reached... in 2022.)
+Toto *by udrželo* případy pod kapacitou JIP! A jedná se o *mnohem* lepší řešení než jakým je 18-měsíční souvislý lockdown do doby, než bude dostupná vakcína. Jednoduše musíme... vše na pár měsíců zavřít a na pár měsíců otevřít, a takto postupovat dokud nebude dostupná vakcína. (Pokud není vakcína dostupná je nutné opakovat do doby dosažení kolektivní imunity... v roce 2022.)
 
-Look, it's nice to draw a line saying "ICU capacity", but there's lots of important things we *can't* simulate here. Like:
+Podívejte, je hezké namalovat hranici "kapacita JIP", ale ve hře je mnoho důležitých faktorů, které zde *nemůžeme* simulovat. Například:
 
-**Mental Health:** Loneliness is one of the biggest risk factors for depression, anxiety, and suicide. And it's as associated with an early death as smoking 15 cigarettes a day.[^loneliness]
+**Psychické zdraví:** Osamělost je největším rizikovým faktorem pro deprese, úzkosti a sebevraždy. Je zároveň spojována s příčinou předčasné smrti, podobně jako kouření 15ti cigaret denně.[^loneliness]
 
-[^loneliness]: See [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Of course, big disclaimer that they found a *correlation*. But unless you want to try randomly assigning people to be lonely for life, observational evidence is all you're gonna get.
+[^loneliness]: Viz [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Samozřejmě velkou odpovědností je nález *korelace*. Pokud však nechcete náhodně vybírat jedince, kteří budou do konce života osamocení, pozorovací důkazy jsou to jediné, co zůstává.
 
-**Financial Health:** "What about the economy" sounds like you care more about dollars than lives, but "the economy" isn't just stocks: it's people's ability to provide food & shelter for their loved ones, to invest in their kids' futures, and enjoy arts, foods, videogames – the stuff that makes life worth living. And besides, poverty *itself* has horrible impacts on mental and physical health.
+**Finanční zdraví:** "A co ekonomie" může znít, jakoby se člověk zajímal více o peníze než životy. Nicméně "ekonomie" nepředstavuje pouze akcie: představuje možnost lidí pořídit si jídlo & přístřeší pro své milované, investovat do budoucnosti pro své děti a užívat si umění, jídlo, videohry - věci, které dělají život zábavným. Mimoto, chudoba *sama o sobě* má hrozný vliv na psychické a fyzické zdraví.
 
-Not saying we *shouldn't* lock down again! We'll look at "circuit breaker" lockdowns later. Still, it's not ideal.
+Neříkáme, že by *neměl* být opět zaveden lockdown! Později se podíváme na lockdown "jističe". Nejedná se o ideální situaci.
 
-But wait... haven't Taiwan and South Korea *already* contained COVID-19? For 4 whole months, *without* long-term lockdowns?
+Ale moment... namají Taiwan a Jižní Korea *již* COVID-19 pod kontrolou? Po dobu celých 4 měsíců, *bez* dlouhodobých lockdownů?
 
-How?
+Jak?
 
-###Scenario 4: Test, Trace, Isolate
+###Scénář 4: Testovat, Trasovat, Izolovat
 
-*"Sure, we \*could've\* done what Taiwan & South Korea did at the start, but it's too late now. We missed the start."*
+*"Samozřejmě jsme \*mohli\* udělat to, co Taiwan a Jižní Korea, na to je však nyní již příliš pozdě. Ujel nám vlak."*
 
-But that's exactly it! “A lockdown isn't a cure, it's just a restart”... **and a fresh start is what we need.**
+A to je přesně ono! “Lockdown není lék, je to pouze restart”... **a nový začátek je to, co potřebujeme.**
 
-To understand how Taiwan & South Korea contained COVID-19, we need to understand the exact timeline of a typical COVID-19 infection[^timeline]:
+Aby bylo možné porozumět tomu, jak Taiwan & Jižní Korea dostali COVID-19 pod kontrolu, je nutné rozumět přesnému časovému vývoji typické infekce onemocněním COVID-19[^timeline]:
 
-[^timeline]: **3 days on average to infectiousness:** “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
+[^timeline]: **Průměrně 3 dny do infekčnosti:** “Pokud předpokládáme, že inkubační doba hlavní distribuce je 5.2 dní (na základě studií prvotních případů onemocnění COVID-19) odhadujeme, že infekčnost se projevuje po 2.3 dnech (95% CI, 0.8–3.0 days) před projevením symptomů” (překlad: Pokud předpokládáme počátek symptomů po  dnech, infekčnost začíná o 2 dny dříve = Infekčnost začíná po 3 dnech) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
     
-    **4 days on average to infecting someone else:** “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
+    **Průměrně 4 dny na infikovaní někoho jiného:** “Hlavní [serial] interval byl 3.96 dní (95% CI 3.53–4.39 dní)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
     
-    **5 days on average to feeling symptoms:** “The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
+    **Průměrně 5 dní na pocítění symptomů:** “Medián inkubačního období projevení symptomů byl odhadnut na 5.1 dní (95% CI, 4.5 to 5.8 days)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
 
 ![](pics/timeline1.png)
 
-If cases only self-isolate when they know they're sick (that is, they feel symptoms), the virus can still spread:
+Pokud jsou případy podrobeny sebe-izolaci až v momentě, kdy lidé ví, že jsou nemocní (tedy když pociťují symptomy), virus se stále šíří:
 
 ![](pics/timeline2.png)
 
-And in fact, 44% of all transmissions are like this: *pre*-symptomatic! [^pre_symp]
+Ve skutečnosti se 44 % všech přenosů stává přeněsně takto: *pre*-symptomaticky! [^pre_symp]
 
-[^pre_symp]: “We estimated that 44% (95% confidence interval, 25–69%) of secondary cases were infected during the index cases’ presymptomatic stage” [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
+[^pre_symp]: “Odhadujeme, že 44 % (95 % interval spolehlivost, 25–69 %) druhotných případů jsou lidé infikovaní během indexových případů v jejich asymptomatické fázi." [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
 
-But, if we find *and quarantine* a symptomatic case's recent close contacts... we stop the spread, by staying one step ahead!
+Nicméně, pokud dohledáme *a umístíme do karantény* nedávné blízké kontakty symptomatických případů... můžeme zastavit šíření tím, že budeme o krok napřed!
 
 ![](pics/timeline3.png)
 
-This is called **contact tracing**. It's an old idea, was used at an unprecedented scale to contain Ebola[^ebola], and now it's core part of how Taiwan & South Korea are containing COVID-19!
+Tomuto se říká **trasování kontaktů**. Jedná se o starý nápad, kterého bylo využito v bezprecedentním měřítku pro zkrocení onemocnění Ebola[^ebola], a toto je základem plánu boje s COVID-19 na Taiwanu a v Jižní Koreji!
 
-[^ebola]: “Contact tracing was a critical intervention in Liberia and represented one of the largest contact tracing efforts during an epidemic in history.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
+[^ebola]: “Trasování kontaktů bylo kritickým opatřením v Libérii a představovalo trasování kontaktů v největším rozsahu v hisotrii" [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
 
-(It also lets us use our limited tests more efficiently, to find pre-symptomatic <span class="nowrap"><icon i></icon>s</span> without needing to test almost everyone.)
+(Navíc nám to umožňuje využívat omezeného množství testů s větší efektivností: na odhalování asymptomatických nositelů <span class="nowrap"><icon i></icon></span>, bez potřeby testovat téměř každého.)
 
-Traditionally, contacts are found with in-person interviews, but those *alone* are too slow for COVID-19's ~48 hour window. That's why contact tracers need help, and be supported by – *NOT* replaced by – contact tracing apps.
+Klasicky se kontakty dohledávají osobními rozhovory. Ale osobní rozhovory *samy o sobě* jsou příliš pomalé pro ~48 hodinové okno COVID-19. Proto vyhledávači kontaktů potřebují pomoc a podporu – *NIKOLIV* nahrazení - trasovacími aplikacemi.
 
-(This idea didn't come from "techies": using an app to fight COVID-19 was first proposed by [a team of Oxford epidemiologists](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
+(Tento nápad nepřichází od "ajťáků": využití aplikací v boji s nemocí COVID-19 byl zpočátku navržen [týmem oxfordských epidemiologů](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
 
-Wait, apps that trace who you've been in contact with?... Does that mean giving up privacy, giving in to Big Brother?
+Počkat, aplikace, které trasují s kým se stýkám?... Znamená to, že Velký Bratr má přístup k mému soukromí?
 
-Heck no! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, a team of epidemiologists & cryptographers (including one of us, Marcel Salathé) is *already* making a contact tracing app – with code available to the public – that reveals **no info about your identity, location, who your contacts are, or even *how many contacts* you've had.**
+Rozhodně ne! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, tým epidemiologů & kryptografů (včetně jednoho z nás, Marcela Salathého) *již* vyvíjejí aplikaci - s kódem přístupným veřejnosti - na trasování kontaktů, která neodhaluje**žádné informace o vaší identitě, lokalitě, kontaktech nebo dokonce *kolik kontaktů* máte.**
 
-Here's how it works:
+_(Na přesně stejném principu funguje i česká eRouška - ta je také tvořena dobrovolníky a její kód je přístupný veřejnosti. - poznámka překladatele)_
+
+Funguje to takto:
 
 ![](pics/dp3t.png)
 
-([Here's the full comic](https://ncase.me/contact-tracing/). Details about "pranking"/false positives/etc in footnote:[^dp3t_details])
+([Zde je celý komiks](https://ncase.me/contact-tracing/). Podrobné informace o "prankingu"/falešných pozitivech/apod. v poznámkách pod čarou:[^dp3t_details])
 
-[^dp3t_details]: To prevent "pranking" (people falsely claiming to be infected), the DP-3T Protocol requires that the hospital first give you a One-Time Passcode that lets you upload your messages.
+[^dp3t_details]: Aby bylo možné zamezit "prankingu" (falešná tvrzení jedinců o infekčním stavu), vyžaduje DP-3T Protocol jednorázové heslo od nemocnice, což vám umožní nahrát zprávu.
     
-    False positives are a problem in both manual & digital contact tracing. Still, we can reduce false positives in 2 ways: 1) By notifying Bobs only if they heard, say, 30+ min worth of messages, not just one message in passing. And 2) If the app *does* think Bob's been exposed, it can refer Bob to a *manual* contact tracer, for an in-depth follow-up interview.
+    Falešná pozitiva jsou problémem pro manuální & digitální trasování kontaktů. I přesto je možné snížit počet falešných pozitivních případů během 2 dnů: 1) Upozorněním Boba pouze v případě zaznamenání, dejme tomu, 30+ důležitých zpráv, nikoliv zprávy z doslechu. A 2) Pokud *si* aplikace myslí, že byl Bob viru vystaven, může jej nasměrovat na *manuálního* trasovač kontaktů, pro následující podrobný rozhovor.
     
-    For other issues like data bandwidth, source integrity, and other security issues, check out [the open-source DP-3T whitepapers!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
+    Pro další problematiku, jako jsou datová šířka pásma, integrita zdroje a další bezpečnostní aspekty se obraťte na [the open-source DP-3T whitepapers!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
 
-Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've inspired Apple & Google to bake privacy-first contact tracing directly into Android/iOS.[^gapple] (Don't trust Google/Apple? Good! The beauty of this system is it doesn't *need* trust!) Soon, your local public health agency may ask you to download an app. If it's privacy-first with publicly-available code, please do!
-
+Spolu s podobnými týmy, jako jsou TCN Protocol[^tcn] a MIT PACT[^pact], se inspiroval Apple & Google začlenit soukromí pro trasování kontaktů přímo do Android/iOS.[^gapple] (Nedůvěřujete Google/Apple? To je dobře! Krásné na tomto systému je to, že *nevyžaduje* důvěru!) V blízké době mohou vaše státní zdravotnické úřady vyžádat stažení této aplikace. Pokud se jedná o model se zabezpečením a veřejně přístupným kódem, učiňte tak.
 [^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
 
 [^pact]: [PACT: Private Automated Contact Tracing](https://pact.mit.edu/)
 
-[^gapple]: [Apple and Google partner on COVID-19 contact tracing technology ](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Note they're not making the apps *themselves*, just creating the systems that will *support* those apps.
+[^gapple]: [Apple and Google partner on COVID-19 contact tracing technology ](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Je dobré vědět, že nevyvíjí aplikace *samotní*, pouze vytvářejí systémy, které *podpoří* tyto aplikace.
 
-But what about folks without smartphones? Or infections through doorknobs? Or "true" asymptomatic cases? Contact tracing apps can't catch all transmissions... *and that's okay!* We don't need to catch *all* transmissions, just 60%+ to get R < 1.
+Ale co lidé bez chytrých telefonů? Nebo infekce dotykem klik? Nebo "skutečné" asymptomatické případy? Aplikace na kontrolu trasování nemohou zachytit veškeré přenosy... *a to je v pořádku!* Nepotřebujeme zachytit veškeré přenosy, pouze 60%+, pro zajištění R < 1.
 
-(Footnote rant about the confusion between pre-symptomatic vs "true" asymptomatic – "true" asymptomatics are rare:[^rant])
+(Celou řadu připomínek na téma zaměňování před-symptomatických a "skutečných" asymptomatických případů najdete v poznámkách pod čarou - "pravé" asymptomatické případy jsou vzácné:[^rant])
 
-[^rant]: Lots of news reports – and honestly, many research papers – did not distinguish between "cases who showed no symptoms when we tested them" (pre-symptomatic) and "cases who showed no symptoms *ever*" (true asymptomatic). The only way you could tell the difference is by following up with cases later.
+[^rant]: Celá řada zpráv – a dokonce několik výzkumných prací – nepoukazuje na rozdíly mezi "případy, které nevykazují symptomy v době testování" (před-symptomatické) a "případy bez *jakýchkoliv* symptomů" (pravé asymptomatické). Jediný způsob jak odhalit rozdíl je následné pozorování případů.
    
-    Which is what [this study](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) did. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
+    Což provedla [this study](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article). (Disclaimer: "Články s dřívějším vydáním nejsou považovány za finální.") V call centru v Jižní Koreji, kde se vyskytlo šíření nákazy nemoci COVID-19, "pouhá 4 (1.9 %) zůstala asymptomatická během 14-denní karantény, nikdo z rodinných příslušníků nebyl vystaven sekundární infekci."
     
-    So that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
+    To znamená, že "pravé asymptomatické" jsou vzácné a chytnout onemocnění od skutečně asymptomatického jedince je ještě vzácnější!
 
-Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining their *pre/a-symptomatic* contacts would reduce R by up to 50%[^oxford]:
+Izolování *symptomatických* případů sníží R až o 40 % a umístěním *před/asymptomatických* kontaktů sníží R až o 50 %[^oxford]:
 
-[^oxford]: From the same Oxford study that first recommended apps to fight COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:    
+[^oxford]: Ze stejné Oxford studie, která zpočátku doporičila aplikace pro boj s nemocí COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) Viz. obr. 2. Předpokládá-li se, že R<sub>0</sub> = 2.0, bylo zjištěno, že:    
     
-    * Symptomatics contribute R = 0.8 (40%)
-    * Pre-symptomatics contribute R = 0.9 (45%)
-    * Asymptomatics contribute R = 0.1 (5%, though their model has uncertainty and it could be much lower)
-    * Environmental stuff like doorknobs contribute R = 0.2 (10%)
+    * Symptomatičtí přispívají R = 0.8 (40%)
+    * Před-symptomatičtí přispívají R = 0.9 (45%)
+    * Asymptomatičtí přispívají R = 0.1 (5%, ačkoliv tento model má nejistoty a hodnota může být výrazně nižší)
+    * Aspekty z našeho prostředí, např. kliky, přispívají R = 0.2 (10%)
 
-    And add up the pre- & a-symptomatic contacts (45% + 5%) and you get 50% of R!
+    A k tomu přidejte před- & a-symptomatické kontakty (45% + 5%) a dostanete se na 50% pro R!
 
 <div class="sim">
 		<iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
 </div>
 
-Thus, even without 100% contact quarantining, we can get R < 1 *without a lockdown!* Much better for our mental & financial health. (As for the cost to folks who have to self-isolate/quarantine, *governments should support them* – pay for the tests, job protection, subsidized paid leave, etc. Still way cheaper than intermittent lockdown.)
+To znamená, že i bez 100 % kontaktů v karanténě můžeme dosáhnout hodnoty R < 1 *bez lockdownu!* To je dobré pro naše psychické & finanční zdraví. (A zároveň je to dobré také pro jedince, kteří musí do izolace/karantény, *stát by je měl podpořit* – zaplatit testy, chránit pracovní místa, placenou dovolenou apod. I tak je to levnější než přerušovaný lockdown.)
 
-We then keep R < 1 until we have a vaccine, which turns susceptible <span class="nowrap"><icon s></icon>s</span> into immune <span class="nowrap"><icon r></icon>s.</span> Herd immunity, the *right* way:
+Poté držíme R < 1 do doby dostupnosti vakcíny, která mění ohrožené <span class="nowrap"><icon s></icon></span> v imunní <span class="nowrap"><icon r></icon>.</span> Stádní imunita, tím *správným* způsobem:
 
 <div class="sim">
 		<iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
 </div>
 
-(Note: this calculator pretends the vaccines are 100% effective. Just remember that in reality, you'd have to compensate by vaccinating *more* than "herd immunity", to *actually* get herd immunity)
+(Pozn.: tento kalkulátor předstírá, že vakcína má 100 % účinnost. Mějte na paměti, že v realitě je nutné kompenzovat očkováním *více* než nad rámec "stádní imunity", aby bylo kolektivní imunity *skutečně* dosaženo.)
 
-Okay, enough talk. Here's a simulation of:
+Dost řečí. Zde je simulace pro:
 
-1. A few-month lockdown, until we can...
-2. Switch to "Test, Trace, Isolate" until we can...
-3. Vaccinate enough people, which means...
-4. We win.
+1. Několikaměsíční lockdown, dokud nebudeme moci...
+2. Přeorientovat na "Testovat, Trasovat, Izolovat", dokud nebudeme moci...
+3. Naočkovat dostatek obyvatel, což znamená...
+4. Vítězství.
 
 <div class="sim">
 		<iframe src="sim?stage=int-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-So that's it! That's how we make an emergency landing on this plane.
+Takže to je ono! Tímto způsobem můžeme s tímto letadlem nouzově přistát.
 
-That's how we beat COVID-19.
+Takto porazíme COVID-19.
 
 ...
 
-But what if things *still* go wrong? Things have gone horribly wrong already. That's fear, and that's good! Fear gives us energy to create *backup plans*.
+Ale co když bude situace *stále* špatná? Situace už se je teď děsivá. To je strach a to je dobře! Strach nám dodává energii pro vytvoření *záložních plánů*.
 
-The pessimist invents the parachute.
+Pesimisté vynalézají padáky.
 
-###Scenario 4+: Masks For All, Summer, Circuit Breakers
+###Scénář 4+: Masky pro všechny, léto, jističe
 
-What if R<sub>0</sub> is way higher than we thought, and the above interventions, even with mild distancing, *still* aren't enough to get R < 1?
+Co když je R<sub>0</sub> mnohem vyšší, než se předpokládalo, a výše zmíněná opatření, dokonce i s určitými rozestupy, *pořád* nejsou dost na dosažení R < 1?
 
-Remember, even if we can't get R < 1, reducing R still reduces the "overshoot" in total cases, thus saving lives. But still, R < 1 is the ideal, so here's a few other ways to reduce R:
+Pomněte: i když nemůžeme dosáhnout R < 1, snížení R stále snižuje "přestřelení" velkového počtu případů, a tím zachraňuje životy. Každopádně, R < 1 je ideální, takže tady jsou některé další způsoby, jak R snížit:
 
-**Masks For All:**
+**Masky pro všechny:**
 
-*"Wait,"* you might ask, *"I thought face masks don't stop you from getting sick?"*
+*"Počkat,"* možná si říkáte, *"Masky nás přece před onemocněním neochrání?"*
 
-You're right. Masks don't stop you from getting sick[^incoming]... they stop you from getting *others* sick.
+Máte pravdu. Maska vás před onemocněním neochrání[^incoming]... chrání ostatní před *vaším* onemocněním.
 
-[^incoming]: “None of these surgical masks exhibited adequate filter performance and facial fit characteristics to be considered respiratory protection devices.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
+[^incoming]: “Žádná z těchto chirurgických masek není vybavena adekvátním filtrem a padnutím na obličej, které by odpovídaly požadavků pro respirační ochranu.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
 
-[^outgoing]: “The overall 3.4 fold reduction [70% reduction] in aerosol copy numbers we observed combined with a nearly complete elimination of large droplet spray demonstrated by Johnson et al. suggests that surgical masks worn by infected persons could have a clinically significant impact on transmission.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
+[^outgoing]: “Celková hodnota 3.4 snížení [70% reduction] aerosolu kopíruje čísla pozorovaná v kombinaci s téměř kompletní eliminace šíření velkých kapének, jak předvel Johnson, který naopak udává, že nošení chirurgických masek infikovanou osobou by mohlo mít klinicky vyšší dopad na přenos.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
 
-[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) See Table 1: a 100% cotton T-shirt has around 2/3 the filtration efficiency as a surgical mask, for the two bacterial aerosols they tested.
+[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) Viz. tabulka 1: 100 % bavlněné triko disponuje zhruba 2/3 účinností filtrace chirurgické masky, to bylo testováno pro dva typy bakteriálních aerosolů.
 
-But wait – how can a simple piece of fabric block droplets in one direction, *but not the other?* The answer's counter-intuitive, yet simple:
+Ale počkat – jak může jednoduchý kus látky blokovat kapénky jedním směrem, *ale ne druhým?*  Odpověď je ne-intuitivní a přitom jednoduchá:
 
 ![](pics/masks.png)
 
-Surgical masks *on the infectious person* reduce cold & flu viruses in aerosols by 70%[^outgoing] – that's potentially as large an impact as a lockdown!
+Chirurgické masky *na infekční osobě* snižují virus v kapénkách nachlazení & chřipky o 70%[^outgoing] – to by mohlo mít potencionálně stejně velký dopad jako lockdown!
 
-However, we don't know for sure the impact of masks on COVID-19 *specifically*. In science, one should only publish a finding if you're 95% sure of it. (...should.[^replication]) Masks, as of May 1st 2020, are less than "95% sure".
+Nicméně nevíme s jistotou, jaký dopad mají masky *specificky* na COVID-19. Ve vědeckém prostředí by měl člověk publikovat pouze zjištění u kterých je 95 % jistota.(...měl.[^replication]) Masky,k 1. květnu 2020 mají méně než 95 % jistotu".
 
-[^replication]: Any actual scientist who read that last sentence is probably laugh-crying right now. See: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [the replication crisis](https://en.wikipedia.org/wiki/Replication_crisis))
+[^replication]: Jakýkoliv vědec, který si přečetl naši poslední větu asi teď pláče smíchy. Viz.: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [the replication crisis](https://en.wikipedia.org/wiki/Replication_crisis))
 
-However, pandemics are like poker. **Make bets only when you're 95% sure, and you'll lose everything at stake.** As a recent article on masks in the British Medical Journal notes,[^precautionary] we *have* to make cost/benefit analyses under uncertainty. Like so:
+Nicméně, pandemie je jako poker. **Když vložíte sázku jen s 95 % jistotou, přijdete o všechno.** Jak prokázal poslední článek na téma masek, který publikoval British Medical Journal,[^precautionary] *musíme* zvážit cenu/výhodu i přes nejistotu. Asi takto:
 
-[^precautionary]: “It is time to apply the precautionary principle” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
+[^precautionary]: “Je načase aplikovat princip předběžné opatrnosti” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
 
-Cost: If homemade cloth masks (which are ~2/3 as effective as surgical masks[^homemade]), super cheap. If surgical masks, more expensive but still pretty cheap.
+Cena: Pokud se jedná o podomácku vyrobené roušky (s efektivitou zhruba na ~2/3 chirurgických roušek[^homemade]), je cena velmi nízká. Pokud se jedná o chirurgické masky, ty jsou dražší, ale stále relativně levné.
 
-Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission by 0% or 70%, the average "expected value" is still 35%, same as a half-lockdown! So let's guess-timate that surgical masks reduce R by up to 35%, discounted for our uncertainty. (Again, you can challenge our assumptions by turning the sliders up/down)
+Výhoda: I v případě, že je šance 50–50, že užíváním chirurgických masek snížíme přenos o 0 % nebo o 70 %, průměrná "očekávaná hodnota" je stále 35 %, což je stejné jako poloviční lockdown! Tedy můžeme odhado-očekávat, že chirurgické masky sníží R až od 35 %, snížené o naši nejistotu. (Naše předpoklady můžete kdykoliv zpochybnit vlastním nastavením posuvníků nahoru/dolů.)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
 </div>
 
-(other arguments for/against masks:[^mask_args])
+(další argumenty pro/proti maskám:[^mask_args])
 
-[^mask_args]: **"We need to save supplies for hospitals."** *Absolutely agreed.* But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.
+[^mask_args]: **"Je nutné ít zásoby pro nemocnice."** *Naprostý souhlas.* Ale to je spíše argument podporující zvýšení výroby masek, ne jejich přerozdělování. Mezitím mohou být vyrobeny látkové masky.
 
-   **"They're hard to wear correctly."** It's also hard to wash your hands according to the WHO Guidelines – seriously, "Step 3) right palm over left dorsum"?! – but we still recommend handwashing, because imperfect is still better than nothing.
+    **"Je složité nosit je správným způsobem."** A taky je složité si umývat ruce podle podkladů WHO - opravdu?, "Krok 3) pravou dlaní přes levý hřbet"?! – přitom je mytí rukou stále doporučováno, i provedené nesprávně je stále lepší než nic.
    
-   **"It'll make people more reckless with handwashing & social distancing."** Sure, and safety belts make people ignore stop signs, and flossing makes people eat rocks. But seriously, we'd argue the opposite: masks are a *constant physical reminder* to be careful – and in East Asia, masks are also a symbol of solidarity!
-    
-    
+    **"Lidé budou kvůli nošení méně pozorní během umývání rukou & dodržování rozestupů."** Jasně, a bezpečnostní pás nutí člověka ignorovat stopku a čištění zubní nití nutí člověka jíst kameny. Ale teď vážně, náš argument je opačný: masky jsou *konstantním fyzickým připomenutím* pro vlastní opatrnost – ve Východní Asii jsou masky navíc symbolem solidarity!    
 
-Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only gets us to R = 1.10, having just 1/3 of people wear masks would tip that over to R < 1, virus contained!
+*Samotné* masky nedosáhnou R < 1. Pokud nás však mytí rukou & "Testovat, Trasovat, Izolovat" dostane pouze na R = 1.10, poté je 1/3 lidí užívajících masky tím posledním kouskem pro přokonání R < 1. A virus je zkrocen!
 
-**Summer:**
+**Léto:**
 
-Okay, this isn't an "intervention" we can control, but it will help! Some news outlets report that summer won't do anything to COVID-19. They're half right: summer won't get R < 1, but it *will* reduce R.
+Dobře, v tomto případě se nejedná o "opatření," které můžeme kontrolovat, i tak může pomoci! Některá média sdělují, že léto s nemocí COVID-19 nijak nepomůže. Napůl mají pravdu: léto nás nedostane na R < 1, ale *pomůže* snížit R.
 
-For COVID-19, every extra 1° Celsius (1.8° Fahrenheit) makes R drop by 1.2%.[^heat] The summer-winter difference in New York City is 26°C (47°F),[^nyc_heat] so summer will make R drop by ~31%.
+Pro COVID-19, každý 1° Celsia (1.8° Fahrenheit) nutí R spadnout o 1.2%.[^heat] Teplotní rozdíl pro léto-zima v New Yorku je 26°C (47°F),[^nyc_heat], takže léto pomůže snížit R o ~31%.
 
-[^heat]: “One-degree Celsius increase in temperature [...] lower[s] R by 0.0225” and “The average R-value of these 100 cities is 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
+[^heat]: “Zvýšení teploty o jeden stupeň Celsia [...] snižuje[s] R o 0.0225” a “Průměrná R-hodnota těchto 100 měst je 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
-[^nyc_heat]: In 2019 at Central Park, hottest month (July) was 79.6°F, coldest month (Jan) was 32.5°F. Difference is 47.1°F, or ~26°C. [PDF from Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
+[^nyc_heat]: V roce 2019 v Central Parku, měl nejteplejší měsíc (Červenec) 79.6°F, nejchladnější měsíc (Leden) byl 32.5°F. Rozdíl je 47.1°F, nebo ~26°C. [PDF from Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
 </div>
 
-Summer alone won't make R < 1, but if we have limited resources, we can scale back some interventions in the summer – so we can scale them *higher* in the winter.
+Samotné léto nám nedodá R < 1, pokud však máme omezené zdroje, můžeme měřítko opatření v létě trochu snížit – díky tomu je můžeme *navýšit* v zimě.
 
-**A "Circuit Breaker" Lockdown:**
+** Lockdown "Jistič":**
 
-And if all that *still* isn't enough to get R < 1... we can do another lockdown.
+A pokud toto všechno *stále* nebude dostatečné pro získání R < 1... můžeme udělat další lockdown.
 
-But we wouldn't have to be 2-months-closed / 1-month-open over & over! Because R is reduced, we'd only need one or two more "circuit breaker" lockdowns before a vaccine is available. (Singapore had to do this recently, "despite" having controlled COVID-19 for 4 months. That's not failure: this *is* what success takes.)
+Není však nutné vše zavírat na 2 měsíce, pak 1 měsíc otevřeno & naopak! Protože R je sníženo, budeme potřebovat pouze jeden nebo dva lockdown "jističe" před dostupností vakcíny. V nedávné době tento krok podstoupil Singapur, "ačkoliv" zde byl COVID-19 4 měsíce pod kontrolou. Nejedná se o selhání: toto *je* cena za úspěch.)
 
-Here's a simulation of a "lazy case" scenario:
+Zde je simulace scénáře "líného případu":
 
-1. Lockdown, then
-2. A moderate amount of hygiene & "Test, Trace, Isolate", with a mild amount of "Masks For All", then...
-3. One more "circuit breaker" lockdown before a vaccine's found.
+1. Lockdown, poté
+2. Přiměřené množství hygieny & "Testovat, Trasovat, Izolovat", s přiměřeným opatřením "Masky pro všechny", poté...
+3. Ještě jednou "jistič" lockdownu před nalezením vakcíny.
 
 <div class="sim">
 		<iframe src="sim?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
 </div>
 
-Not to mention all the *other* interventions we could do, to further push R down:
+A pak jsou tady *další* opatření, která můžeme podniknout pro další snížení hodnoty R:
 
-* Travel restrictions/quarantines
-* Temperature checks at malls & schools
-* Deep-cleaning public spaces
-* [Replacing hand-shaking with foot-bumping](https://twitter.com/V_actually/status/1233785527788285953)
-* And all else human ingenuity shall bring
+* Omezení cestování/karanténa
+* Kontrola teploty v obchodních centrech & školách
+* Hloubkové čištění veřejných prostor
+* [Nahrazení podání rukou něčím jiným](https://twitter.com/V_actually/status/1233785527788285953)
+* A vše ostatní, co nám přinese lidský důvtip
 
 . . .
 
-We hope these plans give you hope. 
+Doufáme, že tyto vám přináší naději. 
 
-**Even under a pessimistic scenario, it *is* possible to beat COVID-19, while protecting our mental and financial health.** Use the lockdown as a "reset button", keep R < 1 with case isolation + privacy-protecting contact tracing + at *least* cloth masks for all... and life can get back to a normal-ish!
+**I s těmito pesimistickými scénáři *je* možné COVID-19 zkrotit a přitom **chránit naše psychické a finanční zdraví.** Využitím lockdownu jakožto "resetujícího tlačítka", udržením R < 1 izolací případů + trasováním kontaktů s ochranou soukromí + *přinejmenším* látkovými maskami pro všechny... můžeme život tak nějak navrátit do normálu!
 
-Sure, you may have dried-out hands. But you'll get to invite a date out to a comics bookstore! You'll get to go out with friends to watch the latest Hollywood cash-grab. You'll get to people-watch at a library, taking joy in people going about the simple business of *being alive.*
+Jistě, možná budete mít vysušené ruce. Ale budete moci jít na rande do obchodu s komiksy! Budete moci jít ven s přáteli na poslední Hollywoodský trhák. Budete moci pozorovat čtenáře v knihovně a mít radost z maličkostí *každodenního života.*
 
-Even under the worst-case scenario... life perseveres.
+I v případě toho nejčernějšího scénáře... si život najde cestu.
 
-So now, let's plan for some *worse* worst-case scenarios. Water landing, get your life jacket, and please follow the lights to the emergency exits:
+Nyní se připravme na některé *horší* z horších scénářů. Přistání na vodě. Oblečte si záchrannou vestu a následujte světelné značení směrem k únikovému východu:
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Years</div>
+        <div>Následujících pár let</div>
     </div>
 </div>
 
-You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you're now immune...
+Nakazíte se onemocněním COVID-19 a uzdravíte se. Nebo se necháte naočkovat vakcínou proti nemoci COVID-19. Každopádně máte nyní imunitu...
 
-...*for how long?*
+...*na jak dlouho?*
 
-* COVID-19 is most closely related to SARS, which gave its survivors 2 years of immunity.[^SARS immunity]
-* The coronaviruses that cause "the" common cold give you 8 months of immunity.[^cold immunity]
-* There's reports of folks recovering from COVID-19, then testing positive again, but it's unclear if these are false positives.[^unclear]
-* One *not-yet-peer-reviewed* study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.[^monkeys]
+* COVID-19 má nejbliže k onemocnění SARS, které svým přeživším dodalo 2 roky imunity.[^SARS immunity]
+* Koronavirus, který způsobuje běžnou chřipku vám dodává 8 měsíců imunity.[^cold immunity]
+* Jsou dostupné zprávy o lidech, zotavených z nemoci COVID-19, jejichž testy byly opět pozitivní. Není však jasné, zda se nejednalo o falešné pozitivní.[^unclear]
+* Jedna *nerecenzovaná* studie na opicích prokázala imunitu na onemocnění COVID-19 trvající přinejmenším 28 dní.[^monkeys]
 
-But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
+Jak je na tom COVID-19 *u lidí*, k 1. květnu 2020, co se týče "délky", je obrovská neznámá.
 
-[^SARS immunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.
+[^SARS immunity]: “Pro SARS-specifické protilátky byly zachovány průměrně 2 roky[...] To znamená, že SARS pacienti mohou být opět náchylní k infekci ≥3 roky po prvotnímu vystavení nákaze.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Bohužel" se nikdy nedovíme jak dlouho imunita pro SARS opravdu trvala, nemoc byla rychle vymícena.
 
-[^cold immunity]: “We found no significant difference between the probability of testing positive at least once and the probability of a recurrence for the beta-coronaviruses HKU1 and OC43 at 34 weeks after enrollment/first infection.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
+[^cold immunity]: “Byly odhaleny výrazné rozdíly mezi pravděpodobností přinejmenším jedné nákazy a pravděpodobností opětovné nákazy pro beta-koronaviry HKU1 a OC43 34 týdnů po zápisu/první infekci." [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
 
-[^unclear]: “Once a person fights off a virus, viral particles tend to linger for some time. These cannot cause infections, but they can trigger a positive test.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
+[^unclear]: “Jakmile člověk vir porazí, virové částice často v těle ještě nějakou dobu přetrvávají. Tyto nemohou spustit infekci, mohou se však projevit jako pozitivní během testování.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
 
-[^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later. 
+[^monkeys]: Od [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: Tento článek byl předtištěn a nepodléhá certifikaci v rámci peer review (prozatím).* Dále zdůrazňujeme, že: opakované infekce byly testovány pouze po 28 dnech. 
 
-For these simulations, let's say it's 1 year.
-**Here's a simulation starting with 100% <span class="nowrap"><icon r></icon>**,</span> exponentially decaying into susceptible, no-immunity <span class="nowrap"><icon s></icon>s</span> after 1 year, on *average*, with variation:
+Pro potřeby této simulace řekněme, že se jedná o 1 rok. **Simulace níže začíná na 100% <span class="nowrap"><icon r></icon>**,</span> exponenciálně se rozpouštějící do ohrožených <span class="nowrap"><icon s></icon></span> bez imunity, a to *průměrně* po 1 roce (s rozptylem):
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-Return of the exponential decay!
+Návrat exponenciálního rozkladu!
 
-This is the **SEIRS Model**. The final "S" stands for <icon s></icon> Susceptible, again.
+Toto je **SEIRS Model**. Poslední "S" znamená <icon s></icon> Susceptible (Ohrožení), stejně jako to první.
 
 ![](pics/seirs.png)
 
-Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions... *if immunity only lasts a year:*
+Pojďme vyzkoušet simulaci šíření onemocnění COVID-19, po dobu 10 let, bez jakýchkoliv opatření... *pokud imunita trvá pouze rok:*
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-In previous simulations, we only had *one* ICU-overwhelming spike. Now, we have several, *and* <icon i></icon> cases come to a rest *permanently at* ICU capacity. (Which, remember, we *tripled* for these simulations)
+V předešlých simulacích byl pouze *jeden* nárůst přetížení JIP. Nyní jich máme několik *a* <icon i></icon> případy se zastaví *permanentně* na kapacitě JIP. (Tu jsme navíc pro potřeby této simulace *ztrojnásobili*, pamatujete?)
 
-R = 1, it's **endemic.**
+R = 1, je **endemické.**
 
-Thankfully, because summer reduces R, it'll make the situation better:
+Naštěstí nám léto snižuje R, a to nám situaci jistě zlepší:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
 </div>
 
-Oh.
+Aha.
 
-Counterintuitively, summer makes the spikes worse *and* regular! This is because summer reduces new <span class="nowrap"><icon i></icon>s,</span> but that in turn reduces new immune <span class="nowrap"><icon r></icon>s.</span> Which means immunity plummets in the summer, *creating* large regular spikes in the winter.
+Oproti tomu, co nám může říct selský rozum, léto nárusty ještě zhoršuje *a* dělá je pravidelnými! Důvodem je to, že léto snižuje nové případy <span class="nowrap"><icon i></icon>,</span>, v náváznosti se však snižuje nově immuní <span class="nowrap"><icon r></icon>.</span> To znamená, že snižování imunity v létě *vytváří* velké a pravidelné přírůstky v zimě.
 
-Thankfully, the solution to this is pretty straightforward – just vaccinate people every fall/winter, like we do with flu shots:
+Naštěstí je řešení tohoto problému poměrně přímočaré - očkování lidí každý podzim/zimu, podobně jako je tomu u chřipky:
 
-**(After playing the recording, try simulating your own vaccination campaigns! Remember you can pause/continue the sim at any time)**
+**(Po odehrání nahrávky můžete vyzkoušet své vlastní vakcinační kampaně! Možnost pozastavení/spuštění simulace je vám stále k dispozici.)**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-But here's the scarier question:
+Zde se nabízí mnohem děsivější otázka:
 
-What if there's no vaccine for *years*? Or *ever?*
+Co když nebude vakcína k dispozici několik *let*? Nebo *nikdy?*
 
-**To be clear: this is unlikely.** Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there's never been a vaccine for any of the other coronaviruses before, but that's because SARS was eradicated quickly, and "the" common cold wasn't worth the investment. 
+**Aby bylo jasno: toto je velmi nepravděpodobné.** Většina epidemiologů očekává vakcínu během 1 až 2 let. Jasně, pro žádný koronavirus ještě dříve nebyla vakcína vynalezena, důvodem je však rychlé vyhlazení onemocnění SARS a *běžná* chřipka nestála za takovou investici.
 
-Still, infectious disease researchers have expressed worries: What if we can't make enough?[^vax_enough] What if we rush it, and it's not safe?[^vax_safe]
+I přesto výzkumníci infekčních onemocnění sdílejí obavy: Co když nedokážeme vytvořit dostatek?[^vax_enough] Co když to uspěcháme a vakcína nebude bezpečná?[^vax_safe]
 
-[^vax_enough]: “If a coronavirus vaccine arrives, can the world make enough?” [by Roxanne Khamsi, on Nature](https://www.nature.com/articles/d41586-020-01063-8)
+[^vax_enough]: “Pokud se vakcína na koronavirus dostaví, bude svět schopen jí vyprodukovat dostatek?” [by Roxanne Khamsi, on Nature](https://www.nature.com/articles/d41586-020-01063-8)
 
-[^vax_safe]: “Don’t rush to deploy COVID-19 vaccines and drugs without sufficient safety guarantees” [by Shibo Jiang, on Nature](https://www.nature.com/articles/d41586-020-00751-9)
+[^vax_safe]: “Nesmí se uspěchat nasazení vakcín a léčiv proti onemocnění COVID-19 bez dostatečné garance bezpečnosti” [by Shibo Jiang, on Nature](https://www.nature.com/articles/d41586-020-00751-9)
 
-Even in the nightmare "no-vaccine" scenario, we still have 3 ways out. From most to least terrible:
+I v případě hororového scénáře "bez vakcíny" existují 3 výstupní možnosti. Od nejvíce po nejméně drastickou:
 
-1) Do intermittent or loose R < 1 interventions, to reach "natural herd immunity". (Warning: this will result in many deaths & damaged lungs. *And* won't work if immunity doesn't last.)
+1) Zavedení částečných či mírných R < 1 opatření, pro dosažení "přirozené" kolektivní imunity. (Varování: následkem bude vysoký počet úmrtí & poškození plic. *A zároveň* plán nebude efektivní, pokud nebude imunita přetrvávající.)
 
-2) Do the R < 1 interventions forever. Contact tracing & wearing masks just becomes a new norm in the post-COVID-19 world, like how STI tests & wearing condoms became a new norm in the post-HIV world.
+2) Zavést R < 1 opatření navždy. Trasování kontaktů & nošení masek se zkrátka stane normou ve světě po příchodu onemocnění COVID-19, tak jako se testování STI & nošení kondomů stalo novou normou ve světě po příchodu onemocnění HIV.
 
-3) Do the R < 1 interventions until we develop treatments that make COVID-19 way, way less likely to need critical care. (Which we should be doing *anyway!*) Reducing ICU use by 10x is the same as increasing our ICU capacity by 10x:
+3) Zavést R < 1 opatření do doby, než bude pro léčbu onemocnění COVID-19 o hodně, opravdu o hodně méně pravděpodobná nutnost intenzivní péče. (Na tom by se mělo pracovat *tak jako tak!*) Desetinásobné snížení využití JIP má stejný efekt jako desetinásobné zvýšení kapacity JIP:
 
-**Here's a simulation of *no* lasting immunity, *no* vaccine, and not even any interventions – just slowly increasing capacity to survive the long-term spikes:**
+**Zde je simulace *bez* trvající imunity, *bez* vakcíny a dokonce i bez opatření – pouze s pomalým navyšováním přežití při dlouhotrvajících přírůstcích:**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-Even under the *worst* worst-case scenario... life perseveres.
+Dokonce i pod tímto *nejhorším* z nejhorších scénářů ... si život najde cestu.
 
 . . .
 
-Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s or numbers. Or try simulating your *own* combination of intervention plans!
+Možná chcete zpochybnit naše předpoklady a vyzkoušet jiná R<sub>0</sub> nebo další čísla. Nebo vyzkoušet simulace svých *vlastních* opatření!
 
-**Here's an (optional) Sandbox Mode, with *everything* available. (scroll to see all controls) Simulate & play around to your heart's content:**
+**Zde je (volitelný) Sandbox Mode, s *veškerou* dostupností. (posuňte se dolů pro zobrazení ovládání) Vytvářejte simulace a pohrejte si s modely jak jen budete chtít:**
 
 <div class="sim">
 		<iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
 </div>
 
-This basic "epidemic flight simulator" has taught us so much. It's let us answer questions about the past few months, next few months, and next few years.
+Tento základní "letecký simulátor epidemie" nás toho hodně naučil. Pomohl nám zodpovědět otázky ohledně předešlých několika měsíců, několika následujících měsíců a několika následujících let.
 
-So finally, let's return to...
+Teď se můžeme konečně vrátit k...
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Now</div>
+        <div>Nyní</div>
     </div>
 </div>
 
-Plane's sunk. We've scrambled onto the life rafts. It's time to find dry land.[^dry_land]
+Letadlo se potopilo. Pevně se držíme záchranné vesty. Je čas se vyškrábat na pevninu.[^dry_land]
 
-[^dry_land]: Dry land metaphor [from Marc Lipsitch & Yonatan Grad, on STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
+[^dry_land]: Metafora pevniny [from Marc Lipsitch & Yonatan Grad, on STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
 
-Teams of epidemiologists and policymakers ([left](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [right](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), and [multi-partisan](https://ethics.harvard.edu/covid-roadmap)) have come to a consensus on how to beat COVID-19, while protecting our lives *and* liberties.
+Týmy epidemiologů a zákonodárců ([levice](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [pravice](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), a [kombinace obou](https://ethics.harvard.edu/covid-roadmap)) se shodli na tom, jak zvítězit nad onemocněním COVID-19, a současně ochránit nače životy *a* svobody.
 
-Here's the rough idea, with some (less-consensus) backup plans:
+Zde je přibližná náplň s několika (více kontroverzními) záložními plány:
 
 ![](pics/plan.png)
 
-So what does this mean for YOU, right now?
+Co to tedy v tuto chvíli znamená pro VÁS?
 
-**For everyone:** Respect the lockdown so we can get out of Phase I asap. Keep washing those hands. Make your own masks. Download a *privacy-protecting* contact tracing app when those are available next month. Stay healthy, physically & mentally! And write your local policymaker to get off their butt and...
+**Pro všechny:** Respektujte lockdowny, ať se můžeme co nejrychleji dostat z Fáze 1. Dodržujte mytí rukou. Noste své masky. Stáhněte si aplikaci pro trasování kontaktů s *ochranou soukromí*, po jejich zpřístupnění příští měsíc. _(V česku dostupná již měsíce - poznámka překladatele.)_ Udržujte své fyzické a psychické zdraví! Kontaktujte svého senátora, ať zvedne zadek a začne něco dělat a ...
 
-**For policymakers:** Make laws to support folks who have to self-isolate/quarantine. Hire more manual contact tracers, *supported* by privacy-protecting contact tracing apps. Direct more funds into the stuff we should be building, like...
+**Pro zákonodárce:** Vytvářejte zákony, které podporují obyvatele, kteří musí do karantény/izolace. Vytvářejte místa na podporu manuálního trasování kontaktů s *podporou* aplikací pro trasování kontaktů, vybavených ochranou soukromí. Nasměrujte více zdrojů k aspektům, které musí být budovány, jako jsou ...
 
-**For builders:** Build tests. Build ventilators. Build personal protective equipment for hospitals. Build tests. Build masks. Build apps. Build antivirals, prophylactics, and other treatments that aren't vaccines. Build vaccines. Build tests. Build tests. Build tests. Build hope. 
+**Pro výzkumníky:** Vytvářejte testy. Vytvářejte ventilátory. Vytvářejte osobní ochranné pomůcky pro nemocnice. Vytvářejte testy. Vytvářejte masky. Vytvářejte aplikace. Vytvářejte antivirotika, profylaktika a další léčbu, mimo vakcín. Vytvářejte vakcíny. Vytvářejte testy. Vytvářejte testy. Vytvářejte testy. Vytvářejte naději.
 
-Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.
+Nebagatelizujte strach za účelem budování naděje. Náš strach by měl být *jednotný* s naší nadějí, podobně jako vynález letadla & padáků. Příprava na děsivou budoucnost je způsob, jakým se *vytváří* nadějná budoucnost.
 
-The only thing to fear is the idea that the only thing to fear is fear itself.
+Jediné, čeho se musíme bát, je pocit, že bát se člověk má jen strachu samotného.
