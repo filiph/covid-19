@@ -42,20 +42,20 @@
     </div>
 </div>
 <p>Piloti využívají leteckých simulátorů, aby se naučili vyvarovat letecké havárii.</p>
-<p><strong>Epidemiologové využívají epidemiologických simulátorů, aby se naučili jak vyvarovat havárii lidstva.</strong></p>
-<p>Vytvořmě tedy velmi, <em>velmi</em> jednoduchý "letecký simulátor epidemie"! V této simulaci mohou <icon i></icon> nakažliví jedinci přeměnit <icon s></icon> ohrožené jedince do více <icon i></icon> nakažlivých jedinců:</p>
+<p><strong>Epidemiologové využívají epidemiologických simulátorů, aby se naučili vyvarovat havárii lidstva.</strong></p>
+<p>Vytvořme tedy velmi, <em>velmi</em> jednoduchý "letecký simulátor epidemie"! V této simulaci mohou <icon i></icon> nakažliví jedinci přeměnit <icon s></icon> ohrožené jedince do více <icon i></icon> nakažlivých jedinců:</p>
 <p><img src="pics/spread.png" /></p>
-<p>Předpokládá se, že <em>na začátku</em> šíření onemocnění COVID-19 přeskočí virus z <icon i></icon> na <icon s></icon> každé 4 dny, <em>průměrně</em>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> (pamatujte, že rozptyl je vysoký)</p>
-<p>Pokud budeme simulovat "dvojnásobek každé 4 dny" <em>a nic jiného</em> - na populaci začínající na hodnotě pouhých 0.001% <span class="nowrap"><icon i></icon>,</span> co se stane?</p>
+<p>Předpokládá se, že <em>na začátku</em> šíření onemocnění COVID-19 přeskočí virus z <icon i></icon> na <icon s></icon> <em>průměrně</em> každé 4 dny.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> (pamatujte, že rozptyl je vysoký)</p>
+<p>Pokud budeme simulovat "dvojnásobek každé 4 dny" <em>a nic jiného</em> na populaci začínající na hodnotě pouhých 0.001% <span class="nowrap"><icon i></icon>,</span> co se stane?</p>
 <p><strong>Klikněte na "Start" pro odehrání simulace! Později si ji můžete zahrát znovu s jiným nastavením:</strong> (technická poznámka: <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>)</p>
 <div class="sim">
         <iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
-<p>Toto je <strong>křivka exponenciálního růstu.</strong> Pomalý začátek a posléze exploze. Začínáme s "Ale vždyť je to jen chřipka." a končíme u "No jasně, chřipky vlastně nevytváří <em>masové hroby v bohatých městech</em>". (autoři naráží na záběry <a href="https://www.politifact.com/factchecks/2020/apr/15/facebook-posts/fact-checking-posts-about-mass-graves-nyc/">masových hrobů</a> blízko New Yorku z dubna — poznámka překladatele)</p>
+<p>Toto je <strong>křivka exponenciálního růstu.</strong> Pomalý začátek a posléze exploze. Začínáme s "Ale vždyť je to jen chřipka." a končíme u "No jasně, chřipky vlastně nevytváří <em>masové hroby v bohatých metropolích</em>". (autoři naráží na záběry <a href="https://www.politifact.com/factchecks/2020/apr/15/facebook-posts/fact-checking-posts-about-mass-graves-nyc/">masových hrobů</a> blízko New Yorku z dubna — poznámka překladatele)</p>
 <p><img src="pics/exponential.png" /></p>
 <p>Tato simulace je ale špatná. Exponenciální růst, naštěstí, nemůže pokračovat donekonečna. Jedním z aspektů, který zastavuje šíření viru, je situace, ve které jsou ostatní <em>již</em> virem nakažení:</p>
 <p><img src="pics/susceptibles.png" /></p>
-<p>Čím více je <span class="nowrap"><icon i></icon></span>, tím rychleji se <span class="nowrap"><icon s></icon></span> stávají <span class="nowrap"><icon i></icon>s,</span> <strong>ale čím méně je <span class="nowrap"><icon s></icon></span>, tím <em>pomaleji</em> se <span class="nowrap"><icon s></icon></span> stávají <span class="nowrap"><icon i></icon>s.</span></strong></p>
+<p>Čím více je <span class="nowrap"><icon i></icon></span>, tím rychleji se z <span class="nowrap"><icon s></icon></span> stávají <span class="nowrap"><icon i></icon>,</span> <strong>ale čím méně je <span class="nowrap"><icon s></icon></span>, tím <em>pomaleji</em> se z <span class="nowrap"><icon s></icon></span> stávají <span class="nowrap"><icon i></icon>s.</span></strong></p>
 <p>Jak to mění růst epidemie? Podívejme se na to:</p>
 <div class="sim">
         <iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
@@ -82,25 +82,25 @@
 <em>druhý</em>-nejdůležitější pojem v základech epidemiologie:</p>
 <p><img src="pics/sir.png" /></p>
 <p><strong>POZNÁMKA: Simulace, které slouží jako podklady pro politiky jsou výrazně, <em>výrazně</em> sofistikovanější než tyto!</strong> Nicméně SIR Model může i přesto vysvětlit některé všeobecné poznatky, i na úkor chybějících nuancí.</p>
-<p>Vlastně, přidejme ještě jednu nuanci: předtím, než se <icon s></icon> stane <span class="nowrap"><icon i></icon>,</span> stávají se nejdříve <icon e></icon> nakaženými. Toto je období během kterého jedinec má virus, ale nemůže jej ještě přenášet na ostatní – je inf<em>ikovaný</em>, ale ne inf<em>ekční</em>.</p>
+<p>Vlastně, přidejme ještě jednu nuanci: předtím, než se z <icon s></icon> stane <span class="nowrap"><icon i></icon>,</span> stávají se nejdříve <icon e></icon> nakaženými. Toto je období během kterého jedinec má virus, ale nemůže jej ještě přenášet na ostatní – je inf<em>ikovaný</em>, ale ne inf<em>ekční</em>.</p>
 <p><img src="pics/seir.png" /></p>
-<p>(Tato varianta se nazývá <strong>SEIR Model</strong><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>, ve kterém (z angl.) "E" představuje <icon e></icon> "Exposed" ("Nakažení"). Upozorňujeme, že toto <em>neznamená</em> běžný význam anglického slova "exposed", kdy možná máte a možná nemáte virus. V této speciální definici, "exposed" znamená, že jej skutečně máte. Vědecká terminologie je oříšek.)</p>
+<p>(Tato varianta se nazývá <strong>SEIR Model</strong><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>, ve kterém "E" představuje <icon e></icon> "Exposed" ("Nakažení"). Upozorňujeme, že toto <em>neznamená</em> běžný význam anglického slova "exposed", kdy možná máte a možná nemáte virus. V této speciální definici "exposed" znamená, že jej skutečně máte. Vědecká terminologie je oříšek.)</p>
 <p>U onemocnění COVID-19 se předpokládá, že <em>v průměru</em> jste <icon e></icon> nakažení-ale-ještě-ne-nakažliví po období 3 dnů.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> Co se stane, pokud to přidáme do simulace?</p>
 <p><b style='color:#ff4040'>Červená <b style='color:#FF9393'>+ Růžová</b> křivka</b> představuje <em>současné</em> případy (nakažlivé <icon i></icon> a nakažené <span class="nowrap"><icon e></icon>),</span><br />
 <b style='color:#888'>Šedá křivka</b> představuje <em>celkové</em> případy (současné + uzdravené <span class="nowrap"><icon r></icon>):</span></p>
 <div class="sim">
         <iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
-<p>Moc se nezmění! Délka období mezi <icon e></icon> nakažením a <icon i></icon> nakažlivostí mění poměr <span class="nowrap"><icon e></icon>/<icon i></icon>,</span> a taky to, <em>kdy</em> vrcholí současné případy... nicméně <em>výška</em> tohoto vrcholu, a kompletního součtu případů na konci, zůstává stejná.</p>
-<p>Proč tomu tak je? Důvodem je onen <em>první</em>-nejdůležitější pojem v základech epidemiologie:</p>
-<p><img src="pics/r.png" /></p>
+<p>Moc se nezmění! Délka období mezi <icon e></icon> nakažením a <icon i></icon> nakažlivostí mění poměr <span class="nowrap"><icon e></icon>/<icon i></icon>,</span> a taky to, <em>kdy</em> vrcholí současné případy... nicméně <em>výška</em> tohoto vrcholu, a kompletní součet případů na konci, zůstává stejná.</p>
+<p>Proč tomu tak je? Důvodem je <em>první</em>-nejdůležitější pojem v základech epidemiologie:</p>
+<p><img src="pics/r.png" alt="R" /></p>
 <p>Zkratka pro "Reprodukční číslo". Jedná se o <em>průměrné</em> číslo lidí, které jeden <icon i></icon> nakazí <em>předtím</em>, než se zotaví (nebo umře).</p>
 <p><img src="pics/r2.png" /></p>
 <p><strong>R</strong> se během epidemie mění, tak jak lidé získávají imunitu a jak se zavádějí různá opatření.</p>
 <p><strong>R<sub>0</sub></strong> (čte se R-nula) je hodnota R <em>na počátku šíření, před získáním imunity, a před jakýmikoliv opatřeními</em>. R<sub>0</sub> se více zaměřuje na sílu viru jako takového, ale stále se může čas od času měnit. Například, R<sub>0</sub> je vyšší ve městech s vyšší hustotou obydlení než v méně obydlených oblastech.</p>
 <p>(Většina zpravodajských článků – a dokonce i některé vědecké práce! – zaměňují R a R<sub>0</sub>. Ještě jednou, vědecká terminologie je oříšek.)</p>
-<p>R<sub>0</sub> pro sezónní chřipku má hodnotu 1.28<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>. To znamená, že na <em>začátku</em> šíření chřipky každý <icon i></icon> infikuje <em>průměrně</em> 1.28 ostatních. (Pokud vám zní zvláštně, že se nejedná o celé číslo, vzpomeňte si, že "průměrná" máma má 2.4 dětí. To neznamená, že někde probíhají polo-děti.)</p>
-<p>R<sub>0</sub> pro COVID-19 je předpokládán na hodnotě kolem 2.2,<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>, ačkoliv jedna <em>ještě nedokončená</em> studie říká, že se ve Wuhanu jednalo o hodnotu 5.7(!).<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></p>
+<p>R<sub>0</sub> pro sezónní chřipku má hodnotu 1.28<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>. To znamená, že na <em>začátku</em> šíření chřipky každý <icon i></icon> infikuje <em>průměrně</em> 1.28 ostatních. (Pokud vám zní zvláštně, že se nejedná o celé číslo, vzpomeňte si, že "průměrná" máma má 2.4 dětí. To neznamená, že někde probíhají půlky dětí.)</p>
+<p>R<sub>0</sub> pro COVID-19 je předpokládán na hodnotě kolem 2.2,<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> ačkoliv jedna <em>ještě nedokončená</em> studie říká, že se ve Wuhanu jednalo o hodnotu 5.7(!).<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></p>
 <p>V našich simulacích – <em>na začátku a průměrně</em> – jeden <icon i></icon> infikuje člověka každé 4 dny, po období 10 dní. "4 dny" spadají do "10 dnů" dva a půlkrát. To znamená, že – <em>na začátku a průměrně</em> – každý <icon i></icon> infikuje 2.5 ostatních. Tedy R<sub>0</sub> = 2.5. (technická:<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>)</p>
 <p><strong>Pohrajte si s touto R<sub>0</sub> kalkulačkou a podívejte se, jakým způsobem je R<sub>0</sub> závislé na době zotavení a periodě nové infekce:</strong></p>
 <div class="sim">
@@ -119,13 +119,13 @@
 <p>Pokud existuje více <span class="nowrap">ne-<icon s></icon></span> než je hranice stádní imunity, vytváří se R &lt; 1. A když je R &lt; 1, růst nových případů se zastavuje: vrchol.</p>
 <p><strong>Pokud si z tohoto průvodce máte odnést pouze jedno ponaučení, je to následující</strong> – jedná se o velmi komplexní diagram, a tak si na jeho prostudování a vstřebání prosím dejte čas:</p>
 <p><img src="pics/r3.png" /></p>
-<p><strong>To znamená: NEPOTŘEBUJEME zachytit všechny přenosy, ani téměř všechny, k tomu, abychom zastavili COVID-19!</strong></p>
+<p><strong>To znamená: NEPOTŘEBUJEME zachytit všechny přenosy (ani téměř všechny) k tomu, abychom zastavili COVID-19!</strong></p>
 <p>Je to paradox. COVID-19 je extrémně nakažlivý. I přesto k jeho zastavení potřebujeme zastavit "pouze" něco přes 60% infekcí. 60%?! Pokud by to byla školní známka, bylo by to 4-. Ale pokud máme R<sub>0</sub> = 2.5, a snížíme jej o 61 %, dává nám to hodnotu R = 0.975, což splňuje R &lt; 1. Virus je pod kontrolou! (přesný vzorec:<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>)</p>
 <p><img src="pics/r4.png" /></p>
-<p>(Pokud si myslíte, že R<sub>0</sub> nebo další čísla v naší simulaci jsou příliš nízká/vysoká, to je dobře. Znamená to, že zpochybňujete naše předpoklady! Na konci tohoto průvodce najdete "Sandbox Mode", kam můžete zadat svá <em>vlastní</em> čísla a simulovat postup.)</p>
+<p>(Pokud si myslíte, že R<sub>0</sub> nebo další čísla v naší simulaci jsou příliš nízká/vysoká, to je dobře. Znamená to, že kriticky uvažujete nad našimy předpoklady! Na konci tohoto průvodce najdete "Sandbox Mode", kam můžete zadat svá <em>vlastní</em> čísla a simulovat postup.)</p>
 <p><em>Každé</em> COVID-19 opatření, které znáte – mytí rukou, rozestupy, lockdowny, vlastní izolace, trasování kontaktů &amp; karanténa, masky na obličej, dokonce i "stádní imunita" – <em>všechna</em> dělají jedno:</p>
 <p>Dostávají R pod 1.</p>
-<p>Takže nyní je na čase použít náš "letecký simulátor epidemie" a přijít tomu na kloub: Jak můžeme získat R &lt; 1 způsobem, <strong>který chrání naše tělesné <em>a</em> finanční zdraví?</strong></p>
+<p>Takže nyní je na čase použít náš "letecký simulátor epidemie" a přijít tomu na kloub: Jak můžeme získat R &lt; 1 způsobem, <strong>který chrání naše tělesné <em>a také</em> finanční zdraví?</strong></p>
 <p>Připravte se na nouzové přistání...</p>
 <div class="section chapter">
     <div>
@@ -135,7 +135,7 @@
 </div>
 <p>...mohlo to být horší. Zde je paralelní realita, která se nestala skutečností:</p>
 <h3>Scénář 0: Nicnedělání</h3>
-<p><em>Zhruba</em> 1 z 20 lidí infikovaných onemocněním COVID-19 vyžaduje lůžko na JIP (Jednotce intenzivní péče).<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> V bohatých zemích, jako je USA, je k dispozici jedno JIP lůžko na 3400 lidí.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> To znamená, že USA dokáží zvládnout 20 z 3400 lidí nakažených <em>zároveň</em>. Jinými slovy, 0.6 % populace.</p>
+<p><em>Zhruba</em> 1 z 20 lidí infikovaných onemocněním COVID-19 vyžaduje lůžko na JIP (jednotce intenzivní péče).<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> V bohatých zemích, jako je USA, je k dispozici jedno JIP lůžko na 3400 lidí.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> To znamená, že USA dokáží zvládnout 20 z 3400 lidí nakažených <em>zároveň</em>. Jinými slovy, 0.6 % populace.</p>
 <p>I v případě, že kapacitu zvýšíme <em>více jak třikrát</em> na 2 %, stane se následující - <em>pokud bychom absolutně nic neučinili:</em></p>
 <div class="sim">
         <iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
@@ -160,21 +160,21 @@
 <p>Tři poznámky:</p>
 <ol>
 <li><p>Tento přístup <em>snižuje</em> celkové případy! <strong>I když se nedostanete na R &lt; 1, snížení R stále zachraňuje životy, a to díky tomu, že snížíme 'přestřelení' nad hranici stádní imunity.</strong> Celá řada lidí si myslí, že "Zploštění křivky" rozšiřuje případy bez snížení celku. Toto není možné v <em>žádném</em> modelu základní epidemiologie. Protože však zprávy podávají informace o tom, že "80% se nakazí" jako jasnou věc, lidé docházejí k závěru, že tento celkový počet případů se nemůže změnit. <em>Ach jo.</em></p></li>
-<li><p>Z důvodů extra opatření dosahují současné případy vrcholu <em>před</em> dosažením kolektivní imunity. Ve skutečnosti v této simulaci celkový počet případů přestřelí <em>pouze zlehka</em> nad kolektivní imunitu – to byl plán Velké Británie! V tomto případě je R &lt; 1. Můžeme vypustit ostatní opatření a COVID-19 může být pod kontrolou! No, až na jeden problém...</p></li>
+<li><p>Z důvodů extra opatření dosahují současné případy vrcholu <em>před</em> dosažením stádní imunity. V této simulaci celkový počet případů přestřelí stádní imunitu <em>pouze zlehka</em> – to byl plán Velké Británie! V tomto případě je R &lt; 1. Můžeme vypustit ostatní opatření a COVID-19 může být pod kontrolou! No, až na jeden problém...</p></li>
 <li><p>Stále je nedostatek JIP lůžek. A to na několik měsíců. (nezapomenínejte na to, že hodnota pro JIP <em>již byla</em> pro potřeby této simulace ztrojnásobena)</p></li>
 </ol>
 <p>To patří k dalším zjištěním ze zprávy Imperial College z 16. března, která přesvědčila VB opustit svůj původní plán. Jakýkoliv pokus o <strong>zmírnění</strong> (snížení R, ale R &gt; 1) selže. Jedinou cestou ven je <strong>potlačení</strong> (snížit R tak, aby nastalo R &lt; 1).</p>
 <p><img src="pics/mitigation_vs_suppression.png" /></p>
 <p>Toto není pouhé zploštění křivky, toto je její <em>rozbití</em>. Například využitím...</p>
 <h3>Scénář 2: Několikaměsíční lockdown</h3>
-<p>Podívejme se co se stane, pokud <em>rozbijeme</em> křivku pětiměsíčním lockdownem, snížením <icon i></icon> na téměř nulovou hodnotu a poté se konečně – <em>konečně</em> – vrátíme do normálního života:</p>
+<p>Podívejme se, co se stane, pokud <em>rozbijeme</em> křivku pětiměsíčním lockdownem, snížením <icon i></icon> na téměř nulovou hodnotu a poté se konečně – <em>konečně</em> – vrátíme do normálního života:</p>
 <div class="sim">
         <iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
 </div>
 <p>Aha.</p>
 <p>Toto je ona "druhá vlna", o které všichni mluví. Jakmile stáhneme lockdown, opět se dostaneme na R &gt; 1. Jeden jediný zbývající <icon i></icon> (nebo importovaný <span class="nowrap"><icon i></icon>)</span> může vyvolat skok případů, které jsou téměř tak hrozné, jako Scénář 0: Nicnedělání.</p>
 <p><strong>Lockdown není lék, jedná se pouze o restart.</strong></p>
-<p>Takže co, uděláme lockdown znovu a znovu?</p>
+<p>Takže co, budeme dělat lockdown znovu a znovu?</p>
 <h3>Scénář 3: Přerušovaný lockdown</h3>
 <p>Toto řešení jako první navrhla zpráva Imperial College z 16. března, a později také zpráva z Harvardu.<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a></p>
 <p><strong>Zde je simulace:</strong> (Po odehrání "nahraného scénáře", můžete vyzkoušet simulaci svého <em>vlastního</em> lockdown plánu změnou posuvníků <em>během</em> simulace! Simulaci můžete pozastavit &amp; pokračovat nebo změnit její rychlost.)</p>
@@ -184,9 +184,9 @@
 <p>Toto <em>by udrželo</em> případy pod kapacitou JIP! A jedná se o <em>mnohem</em> lepší řešení než jakým je 18-měsíční souvislý lockdown do doby, než bude dostupná vakcína. Jednoduše musíme... vše na pár měsíců zavřít a na pár měsíců otevřít, a takto postupovat dokud nebude dostupná vakcína. (Pokud není vakcína dostupná je nutné opakovat do doby dosažení kolektivní imunity... v roce 2022.)</p>
 <p>Podívejte, je hezké namalovat hranici "kapacita JIP", ale ve hře je mnoho důležitých faktorů, které zde <em>nemůžeme</em> simulovat. Například:</p>
 <p><strong>Psychické zdraví:</strong> Osamělost je největším rizikovým faktorem pro deprese, úzkosti a sebevraždy. Je zároveň příčinou předčasné smrti, v podobné míře jako kouření 15ti cigaret denně.<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a></p>
-<p><strong>Finanční zdraví:</strong> Zvolání "A co ekonomika?" může znít, jakoby se člověk zajímal více o peníze než o životy. Nicméně "ekonomika" nepředstavuje pouze akcie: představuje možnost lidí pořídit jídlo &amp; přístřeší pro sebe a své blízké, investovat do budoucnosti svých dětí, a užívat si umění, jídlo, videoher - věcí, které dělají život zábavným. Mimoto, chudoba <em>sama o sobě</em> má velmi špatný vliv na psychické a fyzické zdraví.</p>
+<p><strong>Finanční zdraví:</strong> Zvolání "A co ekonomika?" může znít, jakoby se člověk zajímal více o peníze než o životy. Nicméně "ekonomika" nepředstavuje pouze akcie: představuje schopnost lidí pořídit jídlo a přístřeší pro sebe a své blízké, investovat do budoucnosti svých dětí, a užívat si umění, jídla, videoher - věcí, které dělají život zábavným. Mimoto, chudoba <em>sama o sobě</em> má velmi špatný vliv na psychické a fyzické zdraví.</p>
 <p>Neříkáme, že by <em>neměl</em> být opět zaveden lockdown! Později se podíváme na lockdown "jističe". Nejedná se o ideální situaci.</p>
-<p>Ale moment... namají Taiwan a Jižní Korea <em>již teď</em> COVID-19 pod kontrolou? Po dobu celých 4 měsíců, <em>bez</em> dlouhodobých lockdownů?</p>
+<p>Ale moment... nemají Taiwan a Jižní Korea <em>již teď</em> COVID-19 pod kontrolou? Po dobu celých 4 měsíců, <em>bez</em> dlouhodobých lockdownů?</p>
 <p>Jak?</p>
 <h3>Scénář 4: Testovat, Trasovat, Izolovat</h3>
 <p><em>"Samozřejmě jsme *mohli* udělat to, co Taiwan a Jižní Korea, na to je však nyní již příliš pozdě. Ujel nám vlak."</em></p>
@@ -195,7 +195,7 @@
 <p><img src="pics/timeline1.png" /></p>
 <p>Pokud jsou případy podrobeny sebe-izolaci až v momentě, kdy lidé ví, že jsou nemocní (tedy když pociťují symptomy), virus se stále šíří:</p>
 <p><img src="pics/timeline2.png" /></p>
-<p>44 % všech přenosů stává přesně takto: <em>pre</em>-symptomaticky! <a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a></p>
+<p>44 % všech přenosů se děje přesně takto: <em>pre</em>-symptomaticky! <a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a></p>
 <p>Nicméně, pokud dohledáme <em>a umístíme do karantény</em> nedávné blízké kontakty symptomatických případů... můžeme zastavit šíření tím, že budeme o krok napřed!</p>
 <p><img src="pics/timeline3.png" /></p>
 <p>Tomuto se říká <strong>trasování kontaktů</strong>. Jedná se o starý nápad, kterého bylo využito v bezprecedentním měřítku pro zkrocení onemocnění Ebola<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a>. Toto je základem plánu boje s COVID-19 na Taiwanu a v Jižní Koreji!</p>
@@ -240,7 +240,7 @@
 <p>Co když je R<sub>0</sub> mnohem vyšší, než se předpokládalo, a výše zmíněná opatření, dokonce i s určitými rozestupy, <em>pořád</em> nejsou dost na dosažení R &lt; 1?</p>
 <p>Pomněte: i když nemůžeme dosáhnout R &lt; 1, snížení R stále snižuje "přestřelení" celkového počtu případů, a tím zachraňuje životy. Každopádně, R &lt; 1 je ideální, takže níže jsou některé další způsoby, jak R snížit:</p>
 <p><strong>Masky pro všechny:</strong></p>
-<p><em>"Počkat,"</em> možná si říkáte, <em>"Masky mě přece před onemocněním neochrání?"</em></p>
+<p><em>"Počkat,"</em> možná si říkáte, <em>"Masky mě přece před onemocněním neochrání!"</em></p>
 <p>Máte pravdu. Maska vás před onemocněním neochrání<a href="#fn31" class="footnote-ref" id="fnref31" role="doc-noteref"><sup>31</sup></a>... chrání ostatní před <em>vaším</em> onemocněním.</p>
 <p>Ale počkat – jak může jednoduchý kus látky blokovat kapénky jedním směrem, <em>ale ne druhým?</em> Odpověď je ne-intuitivní a přitom jednoduchá:</p>
 <p><img src="pics/masks.png" /></p>
@@ -255,15 +255,15 @@
 <p>(další argumenty pro/proti maskám:<a href="#fn36" class="footnote-ref" id="fnref36" role="doc-noteref"><sup>36</sup></a>)</p>
 <p><em>Samotné</em> masky nedosáhnou R &lt; 1. Pokud nás však mytí rukou &amp; "Testovat, Trasovat, Izolovat" dostane pouze na R = 1.10, poté je 1/3 lidí užívajících masky tím posledním kouskem pro překonání R &lt; 1. A virus je zkrocen!</p>
 <p><strong>Léto:</strong></p>
-<p>Dobře, v tomto případě se nejedná o "opatření," které můžeme kontrolovat, i tak může pomoci! Některá média sdělují, že léto s nemocí COVID-19 nijak nepomůže. Napůl mají pravdu: léto nás nedostane na R &lt; 1, ale <em>pomůže</em> snížit R.</p>
-<p>Pro COVID-19, každý jeden stupeň Celsia nutí R spadnout o 1.2%.<a href="#fn37" class="footnote-ref" id="fnref37" role="doc-noteref"><sup>37</sup></a> Teplotní rozdíl mezi létem a zimou v New Yorku je 26°C,<a href="#fn38" class="footnote-ref" id="fnref38" role="doc-noteref"><sup>38</sup></a> takže léto pomůže snížit R o ~31%.</p>
+<p>Dobře, v tomto případě se sice nejedná o "opatření," které můžeme kontrolovat, ale i tak může pomoci! Některá média sdělují, že léto s nemocí COVID-19 nijak nepomůže. Napůl mají pravdu: léto nás nedostane na R &lt; 1, ale <em>pomůže</em> snížit R.</p>
+<p>Pro COVID-19 platí, že každý jeden stupeň Celsia sníží R o 1.2%.<a href="#fn37" class="footnote-ref" id="fnref37" role="doc-noteref"><sup>37</sup></a> Teplotní rozdíl mezi létem a zimou v New Yorku je 26°C,<a href="#fn38" class="footnote-ref" id="fnref38" role="doc-noteref"><sup>38</sup></a> takže léto pomůže snížit R o ~31%.</p>
 <div class="sim">
         <iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
 </div>
 <p>Samotné léto nám nedodá R &lt; 1, pokud však máme omezené zdroje, můžeme měřítko opatření v létě trochu snížit – a díky tomu je můžeme <em>navýšit</em> v zimě.</p>
 <p><strong>Lockdown "jistič":</strong></p>
 <p>A pokud toto všechno <em>stále</em> nebude dostatečné pro získání R &lt; 1... můžeme udělat další lockdown.</p>
-<p>Není však nutné vše zavírat na 2 měsíce, pak 1 měsíc otevřeno, a tak dále! Protože R je sníženo, budeme potřebovat pouze jeden nebo dva lockdown "jističe" před dostupností vakcíny. V nedávné době tento krok podstoupil Singapur, "ačkoliv" zde byl COVID-19 4 měsíce pod kontrolou. Nejedná se o selhání: toto <em>je</em> cena za úspěch.</p>
+<p>Není však nutné vše zavírat na 2 měsíce, pak 1 měsíc otevřeno, pak zase zavřeno, a tak stále dokola! Protože je R sníženo, budeme potřebovat pouze jeden nebo dva lockdown "jističe" před dostupností vakcíny. V nedávné době tento krok podstoupil Singapur, "ačkoliv" zde byl COVID-19 již 4 měsíce pod kontrolou. Nejedná se o selhání: toto <em>je</em> cena za úspěch.</p>
 <p>Zde je simulace scénáře "lockdownu na počkání":</p>
 <ol>
 <li>První lockdown, a poté...</li>
@@ -276,7 +276,7 @@
 <p>A pak jsou tady <em>další</em> opatření, která můžeme podniknout pro další snížení hodnoty R:</p>
 <ul>
 <li>Omezení cestování/karanténa</li>
-<li>Kontrola teploty v obchodních centrech &amp; školách</li>
+<li>Kontrola teploty v obchodních centrech a školách</li>
 <li>Hloubkové čištění veřejných prostor</li>
 <li><a href="https://twitter.com/V_actually/status/1233785527788285953">Nahrazení podání rukou něčím jiným</a></li>
 <li>A vše ostatní, co nám přinese lidský důvtip</li>
@@ -286,23 +286,23 @@
 <p>I s těmito pesimistickými scénáři <em>je</em> možné COVID-19 zkrotit a přitom <strong>chránit naše psychické a finanční zdraví.</strong> Využitím lockdownu jakožto "resetujícího tlačítka", udržením R &lt; 1 izolací případů + trasováním kontaktů s ochranou soukromí + <em>přinejmenším</em> látkovými maskami pro všechny... můžeme život tak nějak navrátit do normálu!</p>
 <p>Jistě, možná budete mít vysušené ruce. Ale budete moci jít na rande nebo do obchodu s komiksy! Budete moci jít ven s přáteli na poslední Hollywoodský trhák. Budete moci pozorovat čtenáře v knihovně a mít radost z maličkostí <em>každodenního života.</em></p>
 <p>I v případě toho nejčernějšího scénáře... si život najde cestu.</p>
-<p>Nyní se připravme na některé <em>horší</em> z horších scénářů. Přistání na vodě. Oblečte si záchrannou vestu a následujte světelné značení směrem k únikovému východu:</p>
+<p>Nyní se připravme na ty <em>nejhorší</em> z horších scénářů. Přistání na vodě. Oblečte si záchrannou vestu a následujte světelné značení směrem k únikovému východu:</p>
 <div class="section chapter">
     <div>
         <img src="banners/curve.png" height=480 style="position: absolute;"/>
         <div>Následujících pár let</div>
     </div>
 </div>
-<p>Nakazíte se onemocněním COVID-19 a uzdravíte se. Nebo se necháte naočkovat vakcínou proti nemoci COVID-19. Každopádně máte nyní imunitu...</p>
+<p>Nakazíte se onemocněním COVID-19 a uzdravíte se. Nebo se necháte naočkovat vakcínou. Každopádně máte nyní imunitu...</p>
 <p>...<em>na jak dlouho?</em></p>
 <ul>
 <li>COVID-19 má nejbliže k onemocnění SARS, které svým přeživším dodalo 2 roky imunity.<a href="#fn39" class="footnote-ref" id="fnref39" role="doc-noteref"><sup>39</sup></a></li>
-<li>Koronavirus, který způsobuje běžnou chřipku, vám dá 8 měsíců imunity.<a href="#fn40" class="footnote-ref" id="fnref40" role="doc-noteref"><sup>40</sup></a></li>
+<li>Koronavirus, který způsobuje běžné nachlazení, vám dá 8 měsíců imunity.<a href="#fn40" class="footnote-ref" id="fnref40" role="doc-noteref"><sup>40</sup></a></li>
 <li>Jsou dostupné zprávy o lidech, zotavených z nemoci COVID-19, jejichž testy byly poté opět pozitivní. Není však jasné, zda se nejednalo o falešné pozitivní.<a href="#fn41" class="footnote-ref" id="fnref41" role="doc-noteref"><sup>41</sup></a></li>
 <li>Jedna <em>nerecenzovaná</em> studie na opicích prokázala imunitu na onemocnění COVID-19 trvající přinejmenším 28 dní.<a href="#fn42" class="footnote-ref" id="fnref42" role="doc-noteref"><sup>42</sup></a></li>
 </ul>
 <p>Jak je na tom COVID-19 <em>u lidí</em>, k 1. květnu 2020, co se týče délky imunity? To je obrovská neznámá.</p>
-<p>Pro potřeby této simulace řekněme, že se jedná o 1 rok. <strong>Simulace níže začíná na 100% <span class="nowrap"><icon r></icon>,</span></strong> exponenciálně se rozpouštějící do ohrožených <span class="nowrap"><icon s></icon></span> bez imunity, a to <em>průměrně</em> po 1 roce (s rozptylem):</p>
+<p>Pro potřeby této simulace řekněme, že se jedná o 1 rok. <strong>Simulace níže začíná na 100% <span class="nowrap"><icon r></icon>,</span></strong> exponenciálně se rozpouštějících do ohrožených <span class="nowrap"><icon s></icon></span> bez imunity, a to <em>průměrně</em> po 1 roce (s rozptylem):</p>
 <div class="sim">
         <iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 </div>
@@ -313,14 +313,14 @@
 <div class="sim">
         <iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 </div>
-<p>V předešlých simulacích byl pouze <em>jeden</em> nárůst přetížení JIP. Nyní jich máme několik <em>a</em> <icon i></icon> případy se zastaví <em>permanentně</em> na kapacitě JIP. (Tu jsme navíc pro potřeby této simulace <em>ztrojnásobili</em>, pamatujete?)</p>
+<p>V předešlých simulacích byl pouze <em>jeden</em> nárůst přetížení JIP. Nyní jich máme několik <em>a navíc</em> se <icon i></icon> zastaví <em>permanentně</em> na kapacitě JIP. (Tu jsme navíc pro potřeby této simulace <em>ztrojnásobili</em>, pamatujete?)</p>
 <p>R = 1, tedy je <strong>endemické.</strong></p>
 <p>Naštěstí nám léto snižuje R, a to nám situaci jistě zlepší:</p>
 <div class="sim">
         <iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
 </div>
 <p>Aha.</p>
-<p>Oproti tomu, co nám může říct selský rozum, léto nárusty ještě zhoršuje <em>a</em> dělá je pravidelnými! Důvodem je to, že léto snižuje nové případy <span class="nowrap"><icon i></icon>,</span> v náváznosti se však snižuje i počet nově immuních <span class="nowrap"><icon r></icon>.</span> To znamená, že snižování imunity v létě <em>vytváří</em> velké a pravidelné přírůstky v zimě.</p>
+<p>Oproti tomu, co nám může říct selský rozum, léto nárůsty ještě zhoršuje <em>a navíc</em> je dělá pravidelnými! Důvodem je to, že léto snižuje nové případy <span class="nowrap"><icon i></icon>,</span> v náváznosti se však snižuje i počet nově immuních <span class="nowrap"><icon r></icon>.</span> To znamená, že snižování imunity v létě <em>vytváří</em> velké a pravidelné přírůstky v zimě.</p>
 <p>Naštěstí je řešení tohoto problému poměrně přímočaré - očkování lidí každý podzim/zimu, podobně jako je tomu u chřipky:</p>
 <p><strong>(Po odehrání nahrávky můžete vyzkoušet své vlastní vakcinační kampaně! Možnost pozastavení/spuštění simulace je vám stále k dispozici.)</strong></p>
 <div class="sim">
@@ -328,11 +328,11 @@
 </div>
 <p>Zde se nabízí mnohem děsivější otázka:</p>
 <p>Co když nebude vakcína k dispozici několik <em>let</em>? Nebo <em>nikdy?</em></p>
-<p><strong>Aby bylo jasno: toto je velmi nepravděpodobné.</strong> Většina epidemiologů očekává vakcínu během 1 až 2 let. Jasně, pro žádný koronavirus ještě nikdy nebyla vakcína vynalezena, důvodem je však rychlé vyhlazení onemocnění SARS — a <em>běžná</em> chřipka nestála za takovou investici.</p>
-<p>I přesto výzkumníci infekčních onemocnění sdílejí obavy: Co když nedokážeme vytvořit dostatek?<a href="#fn43" class="footnote-ref" id="fnref43" role="doc-noteref"><sup>43</sup></a> Co když to uspěcháme a vakcína nebude bezpečná?<a href="#fn44" class="footnote-ref" id="fnref44" role="doc-noteref"><sup>44</sup></a></p>
+<p><strong>Aby bylo jasno: toto je velmi nepravděpodobné.</strong> Většina epidemiologů očekává vakcínu během 1 až 2 let. Jasně, pro žádný koronavirus ještě nikdy nebyla vakcína vynalezena, důvodem je však rychlé vyhlazení onemocnění SARS — a běžné nachlazení nestojí za takovou investici.</p>
+<p>I přesto výzkumníci infekčních onemocnění sdílejí obavy: Co když nedokážeme vytvořit dostatek dávek?<a href="#fn43" class="footnote-ref" id="fnref43" role="doc-noteref"><sup>43</sup></a> Co když to uspěcháme a vakcína nebude bezpečná?<a href="#fn44" class="footnote-ref" id="fnref44" role="doc-noteref"><sup>44</sup></a></p>
 <p>I v případě hororového scénáře "bez vakcíny" existují 3 výstupní možnosti. Od nejvíce po nejméně drastickou:</p>
-<p>1) Zavedení částečných či mírných R &lt; 1 opatření, pro dosažení "přirozené" kolektivní imunity. (Varování: následkem bude vysoký počet úmrtí &amp; poškození plic. <em>A zároveň</em> plán nebude efektivní, pokud nebude imunita přetrvávající.)</p>
-<p>2) Zavést R &lt; 1 opatření navždy. Trasování kontaktů &amp; nošení masek se zkrátka po příchodu onemocnění COVID-19 stane ve světě normou, tak jako se testování STI &amp; nošení kondomů stalo novou normou ve světě po příchodu onemocnění HIV.</p>
+<p>1) Zavedení přerušovaných či částečných R &lt; 1 opatření, a to pro dosažení "přirozené" stádní imunity. (Varování: následkem bude vysoký počet úmrtí &amp; poškození plic. <em>A zároveň</em> plán nebude efektivní, pokud nebude imunita přetrvávající.)</p>
+<p>2) Zavést R &lt; 1 opatření navždy. Trasování kontaktů &amp; nošení masek se zkrátka po příchodu onemocnění COVID-19 stane ve světě normou, tak jako se testování <abbr title="sexuálně přenosné nemoci">SPN</abbr> a nošení kondomů stalo novou normou ve světě po příchodu onemocnění HIV.</p>
 <p>3) Zavést R &lt; 1 opatření do doby, než bude pro léčbu onemocnění COVID-19 o hodně, opravdu o hodně méně pravděpodobná nutnost intenzivní péče. (Na tom by se mělo pracovat <em>tak jako tak!</em>) Desetinásobné snížení využití JIP má stejný efekt jako desetinásobné zvýšení kapacity JIP.</p>
 <p><strong>Zde je simulace <em>bez</em> trvající imunity, <em>bez</em> vakcíny a dokonce i bez opatření – pouze s pomalým navyšováním přežití při dlouhotrvajících přírůstcích:</strong></p>
 <div class="sim">
