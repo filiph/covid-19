@@ -158,7 +158,7 @@ U onemocnění COVID-19 se předpokládá, že *v průměru* jste <icon e></icon
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
 
-Moc se nezmění! Délka období mezi <icon e></icon> nakažením a <icon i></icon> nakažlivostí mění poměr <span class="nowrap"><icon e></icon>/<icon i></icon>,</span> a taky to, *kdy* vrcholí současné případy... nicméně *výška* tohoto vrcholu, a kompletní součet případů na konci, zůstává stejná.
+Moc se nezmění! Délka období mezi <icon e></icon> nakažením a <icon i></icon> nakažlivostí mění poměr <span class="nowrap"><icon e></icon>/<icon i></icon>,</span> a taky to, *kdy* vrcholí současné případy... nicméně *výška* tohoto vrcholu, a kompletní součet případů na konci, zůstávají stejné.
 
 Proč tomu tak je? Důvodem je *první*-nejdůležitější pojem v základech epidemiologie:
 
