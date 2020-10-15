@@ -234,7 +234,7 @@ Je to paradox. COVID-19 je extrémně nakažlivý. I přesto k jeho zastavení p
 
 ![](pics/r4.png)
 
-(Pokud si myslíte, že R<sub>0</sub> nebo další čísla v naší simulaci jsou příliš nízká/vysoká, to je dobře. Znamená to, že kriticky uvažujete nad našimy předpoklady! Na konci tohoto průvodce najdete "Sandbox Mode", kam můžete zadat svá *vlastní* čísla a simulovat postup.)
+(Pokud si myslíte, že R<sub>0</sub> nebo další čísla v naší simulaci jsou příliš nízká/vysoká, to je dobře. Znamená to, že kriticky uvažujete nad našimi předpoklady! Na konci tohoto průvodce najdete "Sandbox Mode", kam můžete zadat svá *vlastní* čísla a simulovat postup.)
 
 *Každé* COVID-19 opatření, které znáte – mytí rukou, rozestupy, lockdowny, vlastní izolace, trasování kontaktů & karanténa, masky na obličej, dokonce i "stádní imunita" – *všechna* dělají jedno:
 
