@@ -42,9 +42,9 @@ Tento průvodce (publikovaný 1. května 2020. klikněte na tuto poznámku pod �
 
 [^timestamp]: Tyto poznámky pod čarou budou obsahovat zdroje, odkazy nebo bonusové komentáře. Jako tento komentář!
     
-    **Tento průvodce byl publikován 1. května 2020** Mnoho obsažených informací se stane v budoucnosti zastaralými, věříme však, že tento průvodce pokryje 95 % možných budoucností a že Epidemiologie 101 zůstane navždy užitečná.
+    **Tento průvodce byl publikován 1. května 2020** Mnoho obsažených informací se stane v budoucnosti zastaralými, věříme však, že tento průvodce pokryje 95&nbsp;% možných budoucností a že Epidemiologie 101 zůstane navždy užitečná.
     
-    (Aktualizováno 15. května: Přidány citace pro "1 z 20 of infikovaných osob jsou hospitalizovány" a "0.5 % infikovaných osob umírá")
+    (Aktualizováno 15. května: Přidány citace pro "1 z 20 of infikovaných osob jsou hospitalizovány" a "0.5&nbsp;% infikovaných osob umírá")
 
 Teď se raději připoutejte: čekají nás pořádné turbulence.
 
@@ -67,7 +67,7 @@ Předpokládá se, že *na začátku* šíření onemocnění COVID-19 přeskoč
 
 [^serial_interval]: “Hlavní [sériový] interval byl 3.96 dní (95% CI 3.53–4.39 dní)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Disclaimer: Články s předčasným vydáním nejsou považovány za jejich finální verze)
 
-Pokud budeme simulovat "dvojnásobek každé 4 dny" *a nic jiného* na populaci začínající na hodnotě pouhých 0.001 % <span class="nowrap"><icon i></icon>,</span> co se stane? 
+Pokud budeme simulovat "dvojnásobek každé 4 dny" *a nic jiného* na populaci začínající na hodnotě pouhých 0.001&nbsp;% <span class="nowrap"><icon i></icon>,</span> co se stane? 
 
 **Klikněte na "Start" pro odehrání simulace! Později si ji můžete zahrát znovu s jiným nastavením:** (technická poznámka: [^caveats])
 
@@ -103,7 +103,7 @@ I přesto je tato simulace *stále* nesprávná. Chybí nám jeden faktor. A to,
 
 Pro zjednodušení budeme předstírat, že všichni <icon i></icon> nakažliví jedinci se změní v <icon r></icon> uzdravené. (Mějte na paměti, že v realitě někteří umírají.) Dále předstíráme, že <span class="nowrap"><icon r></icon></span> nemohou být znovu nakažení, a — *prozatím!* — že jsou do konce života imunní.
 
-*Průměrná* doba, kdy jste s onemocněním COVID-19 <icon i></icon> nakažliví, je 10 dní.[^infectiousness] To znamená, že někteří lidé se vyléčí za méně než 10 dní, někteří později. **Takto to vypadá, když simulaci *začneme* se 100 % <span class="nowrap"><icon i></icon>:</span>**
+*Průměrná* doba, kdy jste s onemocněním COVID-19 <icon i></icon> nakažliví, je 10 dní.[^infectiousness] To znamená, že někteří lidé se vyléčí za méně než 10 dní, někteří později. **Takto to vypadá, když simulaci *začneme* se 100&nbsp;% <span class="nowrap"><icon i></icon>:</span>**
 
 [^infectiousness]: “Medián přenosného období \[...\] byl 9.5 dní.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Ano, víme, že "medián" není to samé jako "průměr". Ale pro vzdělávací potřeby je to dostatečně blízko.
 
@@ -121,7 +121,7 @@ Podívejme se na to!
 
 <b style='color:#ff4040'>Červená křivka</b> jsou *současné* případy <span class="nowrap"><icon i></icon>,</span>    
 <b style='color:#999999'>Šedá křivka</b> jsou *celkové* případy (současné + zotavené <span class="nowrap"><icon r></icon>).</span>
-Začínáme na pouhých 0.001 % <span class="nowrap"><icon i></icon>:</span>
+Začínáme na pouhých 0.001&nbsp;% <span class="nowrap"><icon i></icon>:</span>
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
@@ -180,7 +180,7 @@ R<sub>0</sub> pro sezónní chřipku má hodnotu 1.28[^r0_flu]. To znamená, že
 
 R<sub>0</sub> pro COVID-19 je předpokládán na hodnotě kolem 2.2,[^r0_covid] ačkoliv jedna *ještě nedokončená* studie říká, že se ve Wuhanu jednalo o hodnotu 5.7(!).[^r0_wuhan]
 
-[^r0_covid]: “Odhadujeme základní reprodukční číslo R0 pro 2019-nCoV na hodnotu kolem 2.2 (90 % vysoký interval hustoty: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
+[^r0_covid]: “Odhadujeme základní reprodukční číslo R0 pro 2019-nCoV na hodnotu kolem 2.2 (90&nbsp;% vysoký interval hustoty: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
 
 [^r0_wuhan]: “vypočítali jsme medián R0 hodnoty 5.7 (95% CI 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
 
@@ -218,7 +218,7 @@ Pokud existuje více <span class="nowrap">ne-<icon s></icon></span> než je hran
 
 **To znamená: NEPOTŘEBUJEME zachytit všechny přenosy (ani téměř všechny) k tomu, abychom zastavili COVID-19!**
 
-Je to paradox. COVID-19 je extrémně nakažlivý. I přesto k jeho zastavení potřebujeme zastavit "pouze" něco přes 60 % infekcí. 60 %?! Pokud by to byla školní známka, bylo by to 4-. Ale pokud máme R<sub>0</sub> = 2.5, a snížíme jej o 61 %, dává nám to hodnotu R = 0.975, což splňuje R < 1. Virus je pod kontrolou! (přesný vzorec:[^exact_formula])
+Je to paradox. COVID-19 je extrémně nakažlivý. I přesto k jeho zastavení potřebujeme zastavit "pouze" něco přes 60&nbsp;% infekcí. 60&nbsp;%?! Pokud by to byla školní známka, bylo by to 4-. Ale pokud máme R<sub>0</sub> = 2.5, a snížíme jej o 61&nbsp;%, dává nám to hodnotu R = 0.975, což splňuje R < 1. Virus je pod kontrolou! (přesný vzorec:[^exact_formula])
 
 [^exact_formula]: Mějte na paměti R = R<sub>0</sub> * poměr stále povolených přenosů. Pamatujte také na to, že poměr přenosů povoluje = 1 - poměr přenosů *zastavených*.
     
@@ -255,21 +255,21 @@ Připravte se na nouzové přistání...
 
 ### Scénář 0: Nicnedělání
 
-*Zhruba* 1 z 20 lidí infikovaných onemocněním COVID-19 vyžaduje lůžko na JIP (jednotce intenzivní péče).[^icu_covid] V bohatých zemích, jako je USA, je k dispozici jedno JIP lůžko na 3400 lidí.[^icu_us] To znamená, že USA dokáží zvládnout 20 z 3400 lidí nakažených *zároveň*. Jinými slovy, 0.6 % populace.
+*Zhruba* 1 z 20 lidí infikovaných onemocněním COVID-19 vyžaduje lůžko na JIP (jednotce intenzivní péče).[^icu_covid] V bohatých zemích, jako je USA, je k dispozici jedno JIP lůžko na 3400 lidí.[^icu_us] To znamená, že USA dokáží zvládnout 20 z 3400 lidí nakažených *zároveň*. Jinými slovy, 0.6&nbsp;% populace.
 
 [^icu_covid]: **[AKTUALIZOVÁNO 15. KVĚTNA]** Mnoho z Vás právem poukázalo na naši předešlou citaci "**1 z 20** vyžaduje hospitalizaci", ta byla založena na starých datech USA zabývajících se *potvrzenými* případy – což bylo výrazně nižší oproti *skutečným* počtům případů z důvodu nedostatku testování.
     
-    Podívejme se tedy na zemi s *nejvyšším* počtem testů na počet obyvatel: Island. [15. května 2020](https://web.archive.org/web/20200516012656/https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Iceland), měl Island 118 hospitalizovaných na 1802 potvrzených případů ≈ 6.4 % hospitalizační hodnota nebo **1 z 16**.
+    Podívejme se tedy na zemi s *nejvyšším* počtem testů na počet obyvatel: Island. [15. května 2020](https://web.archive.org/web/20200516012656/https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Iceland), měl Island 118 hospitalizovaných na 1802 potvrzených případů ≈ 6.4&nbsp;% hospitalizační hodnota nebo **1 z 16**.
     
-    [Více současná studie COVID-19 ve Francii](https://science.sciencemag.org/content/early/2020/05/12/science.abc3517) – využívající nejen oficiální potvrzené případy, ale také data testů protilátek, zjistila, že “3.6 % infikovaných jedinců vyžaduje hospitalizaci”. Nebo, **1 z 28.**
+    [Více současná studie COVID-19 ve Francii](https://science.sciencemag.org/content/early/2020/05/12/science.abc3517) – využívající nejen oficiální potvrzené případy, ale také data testů protilátek, zjistila, že “3.6&nbsp;% infikovaných jedinců vyžaduje hospitalizaci”. Nebo, **1 z 28.**
     
     Celkově je zde spousta nejistot, ale "1 z 20" je poměrně blízká hodnota. Mimoto, pro zbytek těchto simulací byla kapacita nemocnic *ztrojnásobena* – takže, i když je "1 z 20" třikrát vyšší, pointa zůstává stejná.
     
-    Stará citace: ~~["Procento případů onemocnění COVID-19 ve Spojených státech amerických od 12. února do 16. března 2020, které vyžadovaly přijetí na jednotku intenzivní péče (JIP) dle věkové skupiny"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Mezi 4.9 % a 11.5 % pro *všechny* COVID-19 případy vyžadující ICU. Nižší hranice je vybírána štědře, jedná se o 5 % nebo 1 z 20. Všimněte si, že se jedná o celek specifický pro věkovou strukturu USA a bude vyšší v zemích se starší populací a nižší v zemích s mladší populací.~~
+    Stará citace: ~~["Procento případů onemocnění COVID-19 ve Spojených státech amerických od 12. února do 16. března 2020, které vyžadovaly přijetí na jednotku intenzivní péče (JIP) dle věkové skupiny"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Mezi 4.9&nbsp;% a 11.5&nbsp;% pro *všechny* COVID-19 případy vyžadující ICU. Nižší hranice je vybírána štědře, jedná se o 5&nbsp;% nebo 1 z 20. Všimněte si, že se jedná o celek specifický pro věkovou strukturu USA a bude vyšší v zemích se starší populací a nižší v zemích s mladší populací.~~
 
 [^icu_us]: “Počet JIP lůžek = 96,596”. Od [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Populace byla 328,200,000 v roce 2019. 96,596 z 328,200,000 = přibližně 1 z 3400. 
 
-I v případě, že kapacitu zvýšíme *více jak třikrát* na 2 %, stane se následující - *pokud bychom absolutně nic neučinili:*
+I v případě, že kapacitu zvýšíme *více jak třikrát* na 2&nbsp;%, stane se následující - *pokud bychom absolutně nic neučinili:*
 
 <div class="sim">
 		<iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
@@ -277,14 +277,14 @@ I v případě, že kapacitu zvýšíme *více jak třikrát* na 2 %, stane se n
 
 To není dobré.
 
-Z tohoto důvodu se ve [zprávě Imperial College z 16. března](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) psalo, že pokud nic neuděláme, dojdou nám JIP lůžka, a více jak 80 % populace bude vystaveno infekci.
+Z tohoto důvodu se ve [zprávě Imperial College z 16. března](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) psalo, že pokud nic neuděláme, dojdou nám JIP lůžka, a více jak 80&nbsp;% populace bude vystaveno infekci.
 (pamatujte: celkové případy *přestřelují* stádní imunitu)
 
-I když pouhých 0.5 % infikovaných umírá[^ifr] – a to je štědré číslo, pokud zohledníme, že nejsou JIP lůžka – v zemi tak velké, jako je USA, s 300 miliony obyvatel, 0.5 % z 80 % pro 300 milionů = to je stále 1.2 milionů mrtvých... *POKUD by nebyly podniknuty žádné kroky.*
+I když pouhých 0.5&nbsp;% infikovaných umírá[^ifr] – a to je štědré číslo, pokud zohledníme, že nejsou JIP lůžka – v zemi tak velké, jako je USA, s 300 miliony obyvatel, 0.5&nbsp;% z 80&nbsp;% pro 300 milionů = to je stále 1.2 milionů mrtvých... *POKUD by nebyly podniknuty žádné kroky.*
 
-[^ifr]: **[AKTUALIZOVÁNO 15. KVĚTNA]** [Výzkumníci v Indianě, USA](https://news.iu.edu/stories/2020/05/iupui/releases/13-preliminary-findings-impact-covid-19-indiana-coronavirus.html) provedli náhodný test populace a zjistili poměr infekce-úmrtí (IFR) v hodnotě 0.58 %.
+[^ifr]: **[AKTUALIZOVÁNO 15. KVĚTNA]** [Výzkumníci v Indianě, USA](https://news.iu.edu/stories/2020/05/iupui/releases/13-preliminary-findings-impact-covid-19-indiana-coronavirus.html) provedli náhodný test populace a zjistili poměr infekce-úmrtí (IFR) v hodnotě 0.58&nbsp;%.
 
-(Ve spoustě médií a na sociálních sítích se psalo "80 % se nakazí", ale už ne o tom "NICNEDĚLÁNÍ". Do titulků byl zaveden strach bez porozumění. *Ach jo.*)
+(Ve spoustě médií a na sociálních sítích se psalo "80&nbsp;% se nakazí", ale už ne o tom "NICNEDĚLÁNÍ". Do titulků byl zaveden strach bez porozumění. *Ach jo.*)
 
 ###Scénář 1: Zploštění křivky / Stádní imunita
 
@@ -298,11 +298,11 @@ Nicméně, oba plány obsahují doslova fatální chybu.
 
 Za prvé, podívejme se na dva hlavní způsoby, jak "zploštit křivku": mytí rukou & rozestupy.
 
-Zvýšené mytí rukou snižuje chřipku & nachlazení v zemích s vysokými příjmy o ~25 %[^handwashing], zatímco lockdown celého města v Londýně omezil kontakty o ~70 %[^london]. Řekněme, že mytí rukou dokáže snížit R *až o* 25 % a rozestupy dokáží snížit R *až o* 70 %:
+Zvýšené mytí rukou snižuje chřipku & nachlazení v zemích s vysokými příjmy o ~25&nbsp;%[^handwashing], zatímco lockdown celého města v Londýně omezil kontakty o ~70&nbsp;%[^london]. Řekněme, že mytí rukou dokáže snížit R *až o* 25&nbsp;% a rozestupy dokáží snížit R *až o* 70&nbsp;%:
 
-[^handwashing]: “Všech osm významných studií sděluje, že mytí rukou snižuje riziko respirační infekce, snížení rizika se pohybuje mezi 6 % až 44 % [pooled value 24% (95% CI 6–40%)].” Souhrnná hodnota byla zaokrouhlena na 25 %, pro potřeby zjednodušení této simulace. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Poznámka: jak poukazuje tato meta-analýza, kvality studií mytí rukou (zejména v zemích s vysokými příjmy) jsou hrozné.
+[^handwashing]: “Všech osm významných studií sděluje, že mytí rukou snižuje riziko respirační infekce, snížení rizika se pohybuje mezi 6&nbsp;% až 44&nbsp;% [pooled value 24% (95% CI 6–40%)].” Souhrnná hodnota byla zaokrouhlena na 25&nbsp;%, pro potřeby zjednodušení této simulace. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Poznámka: jak poukazuje tato meta-analýza, kvality studií mytí rukou (zejména v zemích s vysokými příjmy) jsou hrozné.
 
-[^london]: “Bylo zjištěno 75 % snížení denních kontaktů u pozorovaných subjektů. To by bylo dostačující pro snížení R0 z hodnoty 2.6 před lockdownem na 0.62 (0.37 - 0.89) během lockdownu”. To bylo zaokrouhleno na 70 % v těchto simulacích pro jejich zjednodušení. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
+[^london]: “Bylo zjištěno 75&nbsp;% snížení denních kontaktů u pozorovaných subjektů. To by bylo dostačující pro snížení R0 z hodnoty 2.6 před lockdownem na 0.62 (0.37 - 0.89) během lockdownu”. To bylo zaokrouhleno na 70&nbsp;% v těchto simulacích pro jejich zjednodušení. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
 
 **Pohrejte si s tímto kalkulátorem a zjistěte jak poměr <span class="nowrap">ne-<icon s></icon>,</span> mytí rukou a rozestupy snižují R:** (tento kalkulátor vizualizuje jejich *relativní* účinky, z tohoto důvodu zvýšení jednoho *vypadá* jako že snižuje efekt druhého.[^log_caveat])
 
@@ -320,7 +320,7 @@ Zkusme nyní simulovat, jak by se vyvíjela epidemie COVID-19 pokud, počínaje 
 
 Tři poznámky:
 
-1. Tento přístup *snižuje* celkové případy! **I když se nedostanete na R < 1, snížení R stále zachraňuje životy, a to díky tomu, že snížíme 'přestřelení' nad hranici stádní imunity.** Celá řada lidí si myslí, že "Zploštění křivky" rozšiřuje případy bez snížení celku. Toto není možné v *žádném* modelu základní epidemiologie. Protože však zprávy podávají informace o tom, že "80 % se nakazí" jako jasnou věc, lidé docházejí k závěru, že tento celkový počet případů se nemůže změnit. *Ach jo.*
+1. Tento přístup *snižuje* celkové případy! **I když se nedostanete na R < 1, snížení R stále zachraňuje životy, a to díky tomu, že snížíme 'přestřelení' nad hranici stádní imunity.** Celá řada lidí si myslí, že "Zploštění křivky" rozšiřuje případy bez snížení celku. Toto není možné v *žádném* modelu základní epidemiologie. Protože však zprávy podávají informace o tom, že "80&nbsp;% se nakazí" jako jasnou věc, lidé docházejí k závěru, že tento celkový počet případů se nemůže změnit. *Ach jo.*
 
 2. Z důvodů extra opatření dosahují současné případy vrcholu *před* dosažením stádní imunity. V této simulaci celkový počet případů přestřelí stádní imunitu *pouze zlehka* – to byl plán Velké Británie! V tomto případě je R < 1. Můžeme vypustit ostatní opatření a COVID-19 může být pod kontrolou! No, až na jeden problém...
 
@@ -396,9 +396,9 @@ Pokud jsou případy podrobeny sebe-izolaci až v momentě, kdy lidé ví, že j
 
 ![](pics/timeline2.png)
 
-44 % všech přenosů se děje přesně takto: *pre*-symptomaticky! [^pre_symp]
+44&nbsp;% všech přenosů se děje přesně takto: *pre*-symptomaticky! [^pre_symp]
 
-[^pre_symp]: “Odhadujeme, že 44 % (95 % interval spolehlivosti, 25–69 %) druhotných případů jsou lidé infikovaní během indexových případů v jejich asymptomatické fázi." [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
+[^pre_symp]: “Odhadujeme, že 44&nbsp;% (95&nbsp;% interval spolehlivosti, 25–69&nbsp;%) druhotných případů jsou lidé infikovaní během indexových případů v jejich asymptomatické fázi." [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
 
 Nicméně, pokud dohledáme *a umístíme do karantény* nedávné blízké kontakty symptomatických případů... můžeme zastavit šíření tím, že budeme o krok napřed!
 
@@ -440,32 +440,32 @@ DP-3T a podobné týmy, jako jsou TCN Protocol[^tcn] a MIT PACT[^pact], inspirov
 
 [^gapple]: [Apple and Google partner on COVID-19 contact tracing technology ](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Je dobré vědět, že nevyvíjí aplikace *samotní*, pouze vytvářejí systémy, které *podpoří* tyto aplikace.
 
-Ale co lidé bez chytrých telefonů? Nebo infekce dotykem klik? Nebo "skutečné" asymptomatické případy? Aplikace na kontrolu trasování nemohou zachytit veškeré přenosy... *a to je v pořádku!* Pro zajištění R < 1 nepotřebujeme zachytit veškeré přenosy, pouze něco přes 60 %.
+Ale co lidé bez chytrých telefonů? Nebo infekce dotykem klik? Nebo "skutečné" asymptomatické případy? Aplikace na kontrolu trasování nemohou zachytit veškeré přenosy... *a to je v pořádku!* Pro zajištění R < 1 nepotřebujeme zachytit veškeré přenosy, pouze něco přes 60&nbsp;%.
 
 (Celou řadu připomínek na téma zaměňování před-symptomatických a "skutečných" asymptomatických případů najdete v poznámkách pod čarou - "pravé" asymptomatické případy jsou vzácné:[^rant])
 
 [^rant]: Celá řada zpráv – a dokonce několik výzkumných prací – nepoukazuje na rozdíly mezi "případy, které nevykazují symptomy v době testování" (před-symptomatické) a "případy bez *jakýchkoliv* symptomů" (pravé asymptomatické). Jediný způsob jak odhalit rozdíl je následné pozorování případů.
    
-    Což provedla [tato studie](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article). (Disclaimer: "Články s dřívějším vydáním nejsou považovány za finální.") V call centru v Jižní Koreji, kde se vyskytlo šíření nákazy nemoci COVID-19, "pouhá 4 (1.9 %) zůstala asymptomatická během 14-denní karantény, nikdo z rodinných příslušníků nebyl vystaven sekundární infekci."
+    Což provedla [tato studie](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article). (Disclaimer: "Články s dřívějším vydáním nejsou považovány za finální.") V call centru v Jižní Koreji, kde se vyskytlo šíření nákazy nemoci COVID-19, "pouhá 4 (1.9&nbsp;%) zůstala asymptomatická během 14-denní karantény, nikdo z rodinných příslušníků nebyl vystaven sekundární infekci."
     
     To znamená, že "pravé asymptomatické" jsou vzácné a chytnout onemocnění od skutečně asymptomatického jedince je ještě vzácnější!
 
-Izolování *symptomatických* případů sníží R až o 40 % a karanténa *před/asymptomatických* kontaktů sníží R až o 50 %[^oxford]:
+Izolování *symptomatických* případů sníží R až o 40&nbsp;% a karanténa *před/asymptomatických* kontaktů sníží R až o 50&nbsp;%[^oxford]:
 
 [^oxford]: Ze stejné Oxford studie, která zpočátku doporičila aplikace pro boj s nemocí COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) Viz. obr. 2. Předpokládá-li se, že R<sub>0</sub> = 2.0, bylo zjištěno, že:    
     
-    * Symptomatičtí přispívají R = 0.8 (40 %)
-    * Před-symptomatičtí přispívají R = 0.9 (45 %)
-    * Asymptomatičtí přispívají R = 0.1 (5 %, ačkoliv tento model má nejistoty a hodnota může být výrazně nižší)
-    * Aspekty z našeho prostředí, např. kliky, přispívají R = 0.2 (10 %)
+    * Symptomatičtí přispívají R = 0.8 (40&nbsp;%)
+    * Před-symptomatičtí přispívají R = 0.9 (45&nbsp;%)
+    * Asymptomatičtí přispívají R = 0.1 (5&nbsp;%, ačkoliv tento model má nejistoty a hodnota může být výrazně nižší)
+    * Aspekty z našeho prostředí, např. kliky, přispívají R = 0.2 (10&nbsp;%)
 
-    A k tomu přidejte před- & a-symptomatické kontakty (45 % + 5 %) a dostanete se na 50 % pro R!
+    A k tomu přidejte před- & a-symptomatické kontakty (45&nbsp;% + 5&nbsp;%) a dostanete se na 50&nbsp;% pro R!
 
 <div class="sim">
 		<iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
 </div>
 
-To znamená, že i bez 100 % kontaktů v karanténě můžeme dosáhnout hodnoty R < 1 *bez lockdownu!* To je dobré pro naše psychické & finanční zdraví. (A zároveň je to dobré také pro jedince, kteří musí do izolace/karantény. *Stát by je měl podpořit* – zaplatit testy, chránit pracovní místa, placenou dovolenou apod. I tak je to levnější než přerušovaný lockdown.)
+To znamená, že i bez 100&nbsp;% kontaktů v karanténě můžeme dosáhnout hodnoty R < 1 *bez lockdownu!* To je dobré pro naše psychické & finanční zdraví. (A zároveň je to dobré také pro jedince, kteří musí do izolace/karantény. *Stát by je měl podpořit* – zaplatit testy, chránit pracovní místa, placenou dovolenou apod. I tak je to levnější než přerušovaný lockdown.)
 
 Poté držíme R < 1 do doby dostupnosti vakcíny, která mění ohrožené <span class="nowrap"><icon s></icon></span> v imunní <span class="nowrap"><icon r></icon>.</span> Stádní imunita, tím *správným* způsobem:
 
@@ -518,7 +518,7 @@ Ale počkat – jak může jednoduchý kus látky blokovat kapénky jedním smě
 
 ![](pics/masks.png)
 
-Chirurgické masky *na infekční osobě* snižují virus v kapénkách nachlazení & chřipky o 70 %[^outgoing] – to by mohlo mít potencionálně stejně velký dopad jako lockdown!
+Chirurgické masky *na infekční osobě* snižují virus v kapénkách nachlazení & chřipky o 70&nbsp;%[^outgoing] – to by mohlo mít potencionálně stejně velký dopad jako lockdown!
 
 Nicméně nevíme s jistotou, jaký dopad mají masky *specificky* na COVID-19. Ve vědeckém prostředí by měl člověk publikovat pouze zjištění u kterých je 95% jistota.(...měl.[^replication]) Masky, k 1. květnu 2020, mají méně než 95% jistotu.
 
@@ -530,7 +530,7 @@ Nicméně, pandemie je jako poker. **Když vložíte sázku, jen když máte 95%
 
 Cena: Pokud se jedná o podomácku vyrobené roušky (s efektivitou zhruba na dvou třetinách chirurgických roušek[^homemade]), je cena velmi nízká. Pokud se jedná o chirurgické masky, ty jsou dražší, ale stále relativně dostupné.
 
-Výhoda: I v případě, že je šance 50–50, že užíváním chirurgických masek snížíme přenos o 0 % nebo o 70 %, průměrná "očekávaná hodnota" je stále 35 %, což je stejné jako poloviční lockdown! Tedy můžeme odhado-očekávat, že chirurgické masky sníží R až od 35 %, snížené o naši nejistotu. (Naše předpoklady můžete kdykoliv zpochybnit vlastním nastavením posuvníků.)
+Výhoda: I v případě, že je šance 50–50, že užíváním chirurgických masek snížíme přenos o 0&nbsp;% nebo o 70&nbsp;%, průměrná "očekávaná hodnota" je stále 35&nbsp;%, což je stejné jako poloviční lockdown! Tedy můžeme odhado-očekávat, že chirurgické masky sníží R až od 35&nbsp;%, snížené o naši nejistotu. (Naše předpoklady můžete kdykoliv zpochybnit vlastním nastavením posuvníků.)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
@@ -550,9 +550,9 @@ Výhoda: I v případě, že je šance 50–50, že užíváním chirurgických 
 
 Dobře, v tomto případě se sice nejedná o "opatření," které můžeme kontrolovat, ale i tak může pomoci! Některá média sdělují, že léto s nemocí COVID-19 nijak nepomůže. Napůl mají pravdu: léto nás nedostane na R < 1, ale *pomůže* snížit R.
 
-Pro COVID-19 platí, že každý jeden stupeň Celsia sníží R o 1.2 %.[^heat] Teplotní rozdíl mezi létem a zimou v New Yorku je 26°C,[^nyc_heat] takže léto pomůže snížit R o ~31 %.
+Pro COVID-19 platí, že každý jeden stupeň Celsia sníží R o 1.2&nbsp;%.[^heat] Teplotní rozdíl mezi létem a zimou v New Yorku je 26°C,[^nyc_heat] takže léto pomůže snížit R o ~31&nbsp;%.
 
-[^heat]: “Zvýšení teploty o jeden stupeň Celsia [...] snižuje[s] R o 0.0225” a “Průměrná R-hodnota těchto 100 měst je 1.83”. 0.0225 ÷ 1.83 = ~1.2 %. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
+[^heat]: “Zvýšení teploty o jeden stupeň Celsia [...] snižuje[s] R o 0.0225” a “Průměrná R-hodnota těchto 100 měst je 1.83”. 0.0225 ÷ 1.83 = ~1.2&nbsp;%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
 [^nyc_heat]: V roce 2019 v Central Parku, měl nejteplejší měsíc (Červenec) 79.6°F, nejchladnější měsíc (Leden) byl 32.5°F. Rozdíl je 47.1°F, nebo ~26°C. [PDF from Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
 
@@ -624,7 +624,7 @@ Jak je na tom COVID-19 *u lidí*, k 1. květnu 2020, co se týče délky imunity
 
 [^monkeys]: Od [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: Tento článek byl předtištěn a nepodléhá certifikaci v rámci peer review (prozatím).* Dále zdůrazňujeme, že: opakované infekce byly testovány pouze po 28 dnech. 
 
-Pro potřeby této simulace řekněme, že se jedná o 1 rok. **Simulace níže začíná na 100 % <span class="nowrap"><icon r></icon>,</span>** exponenciálně se rozpouštějících do ohrožených <span class="nowrap"><icon s></icon></span> bez imunity, a to *průměrně* po 1 roce (s rozptylem):
+Pro potřeby této simulace řekněme, že se jedná o 1 rok. **Simulace níže začíná na 100&nbsp;% <span class="nowrap"><icon r></icon>,</span>** exponenciálně se rozpouštějících do ohrožených <span class="nowrap"><icon s></icon></span> bez imunity, a to *průměrně* po 1 roce (s rozptylem):
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
