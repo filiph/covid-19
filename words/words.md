@@ -81,7 +81,7 @@ Pokud budeme simulovat "dvojnásobek každé 4 dny" *a nic jiného* - na populac
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
 
-Toto je **křivka exponenciálního růstu.** Pomalý začátek a posléze exploze. Začínáme s "Ale vždyť je to jen chřipka." a končíme u "No jasně, chřikpy vlastně nevytváří *masové hroby v bohatých městech*". (autoři naráží na záběry [masových hrobů](https://www.politifact.com/factchecks/2020/apr/15/facebook-posts/fact-checking-posts-about-mass-graves-nyc/) blízko New Yorku z dubna — poznámka překladatele)
+Toto je **křivka exponenciálního růstu.** Pomalý začátek a posléze exploze. Začínáme s "Ale vždyť je to jen chřipka." a končíme u "No jasně, chřipky vlastně nevytváří *masové hroby v bohatých městech*". (autoři naráží na záběry [masových hrobů](https://www.politifact.com/factchecks/2020/apr/15/facebook-posts/fact-checking-posts-about-mass-graves-nyc/) blízko New Yorku z dubna — poznámka překladatele)
 
 ![](pics/exponential.png)
 
