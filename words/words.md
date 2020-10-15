@@ -624,7 +624,7 @@ Jak je na tom COVID-19 *u lidí*, k 1. květnu 2020, co se týče délky imunity
 
 [^monkeys]: Od [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: Tento článek byl předtištěn a nepodléhá certifikaci v rámci peer review (prozatím).* Dále zdůrazňujeme, že: opakované infekce byly testovány pouze po 28 dnech. 
 
-Pro potřeby této simulace řekněme, že se jedná o 1 rok. **Simulace níže začíná na 100% <span class="nowrap"><icon r></icon>**,</span> exponenciálně se rozpouštějící do ohrožených <span class="nowrap"><icon s></icon></span> bez imunity, a to *průměrně* po 1 roce (s rozptylem):
+Pro potřeby této simulace řekněme, že se jedná o 1 rok. **Simulace níže začíná na 100% <span class="nowrap"><icon r></icon>,</span>** exponenciálně se rozpouštějící do ohrožených <span class="nowrap"><icon s></icon></span> bez imunity, a to *průměrně* po 1 roce (s rozptylem):
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
