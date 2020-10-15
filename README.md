@@ -48,3 +48,12 @@ Step 7)
 
 🎉 Party! Your translation should now be linked to from the main page.
 (Remember to close your Github Issue!)
+
+### Notes
+
+Using `pandoc` to convert the Markdown file to HTML and putting the 
+HTML contents into the clipboard (works on macOS):
+
+```sh
+pandoc --from markdown_strict+footnotes words/words.md -o words/words.html && cat words/words.html | pbcopy
+``` 
