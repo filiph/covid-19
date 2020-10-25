@@ -200,17 +200,17 @@ Ale pomněte: čím méně je <span class="nowrap"><icon s></icon></span>, tím 
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
 
-Když má dostatek lidí imunitu, pak R < 1, a virus je potlačen! Tomu se říká **stádní imunita**. U chřipky je stádní imunity dosaženo *očkováním*. Pokoušet se o dosažení "přirozené stádní imunity" vystavením lidí infekci je *příšerný* nápad. (Avšak ne z důvodů, které si nejspíš myslíte! K tomu se dostaneme později.)
+Když má dostatek lidí imunitu, pak R < 1, a virus je potlačen! Tomu se říká **komunitní imunita**. U chřipky je komunitní imunity dosaženo *očkováním*. Pokoušet se o dosažení "přirozené komunitní imunity" vystavením lidí infekci je *příšerný* nápad. (Avšak ne z důvodů, které si nejspíš myslíte! K tomu se dostaneme později.)
 
-Zkusme si nyní opět přehrát SEIR Model, nyní zobrazující R<sub>0</sub>, R napříč časem, a hranici stádní imunity:
+Zkusme si nyní opět přehrát SEIR Model, nyní zobrazující R<sub>0</sub>, R napříč časem, a hranici komunitní imunity:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 </div>
 
-**VŠIMNĚTE SI: Celkové případy *se nezastaví* na hranici stádní imunity, ale přestřelí ji!** A překračují tu hranici *přesně* v momentu nejvyššího počtu případů. (To platí bez ohledu na změnu nastavení – vyzkoušejte si to sami!)
+**VŠIMNĚTE SI: Celkové případy *se nezastaví* na hranici komunitní imunity, ale přestřelí ji!** A překračují tu hranici *přesně* v momentu nejvyššího počtu případů. (To platí bez ohledu na změnu nastavení – vyzkoušejte si to sami!)
 
-Pokud existuje více <span class="nowrap">ne-<icon s></icon></span> než je hranice stádní imunity, vytváří se R < 1. A když je R < 1, růst nových případů se zastavuje: vrchol.
+Pokud existuje více <span class="nowrap">ne-<icon s></icon></span> než je hranice komunitní imunity, vytváří se R < 1. A když je R < 1, růst nových případů se zastavuje: vrchol.
 
 **Pokud si z tohoto průvodce máte odnést pouze jedno ponaučení, je to následující** – jedná se o velmi komplexní diagram, a tak si na jeho prostudování a vstřebání prosím dejte čas:
 
@@ -236,7 +236,7 @@ Je to paradox. COVID-19 je extrémně nakažlivý. I přesto k jeho zastavení p
 
 (Pokud si myslíte, že R<sub>0</sub> nebo další čísla v naší simulaci jsou příliš nízká/vysoká, to je dobře. Znamená to, že kriticky uvažujete nad našimi předpoklady! Na konci tohoto průvodce najdete "Sandbox Mode", kam můžete zadat svá *vlastní* čísla a simulovat postup.)
 
-*Každé* COVID-19 opatření, které znáte – mytí rukou, rozestupy, lockdowny, vlastní izolace, trasování kontaktů & karanténa, masky na obličej, dokonce i "stádní imunita" – *všechna* dělají jedno:
+*Každé* COVID-19 opatření, které znáte – mytí rukou, rozestupy, lockdowny, vlastní izolace, trasování kontaktů & karanténa, masky na obličej, dokonce i "komunitní imunita" – *všechna* dělají jedno:
 
 Dostávají R pod 1.
 
@@ -278,7 +278,7 @@ I v případě, že kapacitu zvýšíme *více jak třikrát* na 2&nbsp;%, stane
 To není dobré.
 
 Z tohoto důvodu se ve [zprávě Imperial College z 16. března](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) psalo, že pokud nic neuděláme, dojdou nám JIP lůžka, a více jak 80&nbsp;% populace bude vystaveno infekci.
-(pamatujte: celkové případy *přestřelují* stádní imunitu)
+(pamatujte: celkové případy *přestřelují* komunitní imunitu)
 
 I když pouhých 0.5&nbsp;% infikovaných umírá[^ifr] – a to je štědré číslo, pokud zohledníme, že nejsou JIP lůžka – v zemi tak velké, jako je USA, s 300 miliony obyvatel, 0.5&nbsp;% z 80&nbsp;% pro 300 milionů = to je stále 1.2 milionů mrtvých... *POKUD by nebyly podniknuty žádné kroky.*
 
@@ -286,11 +286,11 @@ I když pouhých 0.5&nbsp;% infikovaných umírá[^ifr] – a to je štědré č
 
 (Ve spoustě médií a na sociálních sítích se psalo "80&nbsp;% se nakazí", ale už ne o tom "NICNEDĚLÁNÍ". Do titulků byl zaveden strach bez porozumění. *Ach jo.*)
 
-###Scénář 1: Zploštění křivky / Stádní imunita
+###Scénář 1: Zploštění křivky / Komunitní imunita
 
-Plán na "zploštění křivky" byl vychvalován každou veřejnou zdravotnickou organizací, zatímco ve Velké Británii byl záměr "stádní imunity" vypískán. Jedná se o *ty samé plány.* VB zkrátka ten svůj nedokázala dobře sdělit.[^yong]
+Plán na "zploštění křivky" byl vychvalován každou veřejnou zdravotnickou organizací, zatímco ve Velké Británii byl záměr "komunitní imunity" vypískán. Jedná se o *ty samé plány.* VB zkrátka ten svůj nedokázala dobře sdělit.[^yong]
 
-[^yong]: “Říká, že cíl je stejný jako v ostatních zemích: zploštění křivky ohromným nárůstem infekcí. Následkem může být zajištění národní stádní imunity; jedná se o vedlejší účinek, nikoliv záměr. [...] Skutečný vládní plán proti koronaviru, dostupný online, vůbec stádní imunitu nezmiňuje.”
+[^yong]: “Říká, že cíl je stejný jako v ostatních zemích: zploštění křivky ohromným nárůstem infekcí. Následkem může být zajištění národní komunitní imunity; jedná se o vedlejší účinek, nikoliv záměr. [...] Skutečný vládní plán proti koronaviru, dostupný online, vůbec komunitní imunitu nezmiňuje.”
     
     Z [The Atlantic článku od Ed Yonga](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
 
@@ -320,9 +320,9 @@ Zkusme nyní simulovat, jak by se vyvíjela epidemie COVID-19 pokud, počínaje 
 
 Tři poznámky:
 
-1. Tento přístup *snižuje* celkové případy! **I když se nedostanete na R < 1, snížení R stále zachraňuje životy, a to díky tomu, že snížíme 'přestřelení' nad hranici stádní imunity.** Celá řada lidí si myslí, že "Zploštění křivky" rozšiřuje případy bez snížení celku. Toto není možné v *žádném* modelu základní epidemiologie. Protože však zprávy podávají informace o tom, že "80&nbsp;% se nakazí" jako jasnou věc, lidé docházejí k závěru, že tento celkový počet případů se nemůže změnit. *Ach jo.*
+1. Tento přístup *snižuje* celkové případy! **I když se nedostanete na R < 1, snížení R stále zachraňuje životy, a to díky tomu, že snížíme 'přestřelení' nad hranici komunitní imunity.** Celá řada lidí si myslí, že "Zploštění křivky" rozšiřuje případy bez snížení celku. Toto není možné v *žádném* modelu základní epidemiologie. Protože však zprávy podávají informace o tom, že "80&nbsp;% se nakazí" jako jasnou věc, lidé docházejí k závěru, že tento celkový počet případů se nemůže změnit. *Ach jo.*
 
-2. Z důvodů extra opatření dosahují současné případy vrcholu *před* dosažením stádní imunity. V této simulaci celkový počet případů přestřelí stádní imunitu *pouze zlehka* – to byl plán Velké Británie! V tomto případě je R < 1. Můžeme vypustit ostatní opatření a COVID-19 může být pod kontrolou! No, až na jeden problém...
+2. Z důvodů extra opatření dosahují současné případy vrcholu *před* dosažením komunitní imunity. V této simulaci celkový počet případů přestřelí komunitní imunitu *pouze zlehka* – to byl plán Velké Británie! V tomto případě je R < 1. Můžeme vypustit ostatní opatření a COVID-19 může být pod kontrolou! No, až na jeden problém...
 
 3. Stále je nedostatek JIP lůžek. A to na několik měsíců. (nezapomenínejte na to, že hodnota pro JIP *již byla* pro potřeby této simulace ztrojnásobena)
 
@@ -467,13 +467,13 @@ Izolování *symptomatických* případů sníží R až o 40&nbsp;% a karantén
 
 To znamená, že i bez 100&nbsp;% kontaktů v karanténě můžeme dosáhnout hodnoty R < 1 *bez lockdownu!* To je dobré pro naše psychické & finanční zdraví. (A zároveň je to dobré také pro jedince, kteří musí do izolace/karantény. *Stát by je měl podpořit* – zaplatit testy, chránit pracovní místa, placenou dovolenou apod. I tak je to levnější než přerušovaný lockdown.)
 
-Poté držíme R < 1 do doby dostupnosti vakcíny, která mění ohrožené <span class="nowrap"><icon s></icon></span> v imunní <span class="nowrap"><icon r></icon>.</span> Stádní imunita, tím *správným* způsobem:
+Poté držíme R < 1 do doby dostupnosti vakcíny, která mění ohrožené <span class="nowrap"><icon s></icon></span> v imunní <span class="nowrap"><icon r></icon>.</span> Komunitní imunita, tím *správným* způsobem:
 
 <div class="sim">
 		<iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
 </div>
 
-(Pozn.: tento kalkulátor předstírá, že vakcína má 100% účinnost. Mějte na paměti, že v realitě je nutné kompenzovat očkováním *více* než nad rámec "stádní imunity", aby bylo stádní imunity *skutečně* dosaženo.)
+(Pozn.: tento kalkulátor předstírá, že vakcína má 100% účinnost. Mějte na paměti, že v realitě je nutné kompenzovat očkováním *více* než nad rámec "komunitní imunity", aby bylo komunitní imunity *skutečně* dosaženo.)
 
 Dost řečí. Zde je simulace:
 
@@ -678,7 +678,7 @@ I přesto výzkumníci infekčních onemocnění sdílejí obavy: Co když nedok
 
 I v případě hororového scénáře "bez vakcíny" existují 3 výstupní možnosti. Od nejvíce po nejméně drastickou:
 
-1) Zavedení přerušovaných či částečných R < 1 opatření, a to pro dosažení "přirozené" stádní imunity. (Varování: následkem bude vysoký počet úmrtí & poškození plic. *A zároveň* plán nebude efektivní, pokud nebude imunita přetrvávající.)
+1) Zavedení přerušovaných či částečných R < 1 opatření, a to pro dosažení "přirozené" komunitní imunity. (Varování: následkem bude vysoký počet úmrtí & poškození plic. *A zároveň* plán nebude efektivní, pokud nebude imunita přetrvávající.)
 
 2) Zavést R < 1 opatření navždy. Trasování kontaktů & nošení masek se zkrátka po příchodu onemocnění COVID-19 stane ve světě normou, tak jako se testování <abbr title="sexuálně přenosné nemoci">SPN</abbr> a nošení kondomů stalo novou normou ve světě po příchodu onemocnění HIV.
 
